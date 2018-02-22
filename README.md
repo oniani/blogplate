@@ -1,2 +1,2 @@
 # Futuristic Journal
-This is the template for my blog.
+This is the "early" template for my blog. I am working on its design so it is not even remotely close to being finished.
