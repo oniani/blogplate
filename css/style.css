@@ -1,0 +1,33 @@
+header {
+	text-align: center;
+    border: 2px solid blue;
+    padding: 25px;
+    border-width: 10px;
+    border-left-width: 101px;
+    border-right-width: 101px;
+    border-top-width: 20px;
+    border-bottom-width: 20px;  
+    width: 300px;
+    height: 100px;
+    padding: 30px;    
+    border: 10px solid blue;
+    margin: auto;
+}
+
+h2 {
+	text-align: center;
+    color: blue;
+}
+
+body {
+    background-color: #B1CBBB;
+}
+
+article {
+    text-align: center;
+}
+
+footer {
+	align-content: center;
+	text-align: center;
+}
