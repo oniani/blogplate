@@ -37,11 +37,6 @@ footer {
 
 /* This is the start of the <div> and <span> based code*/
 
-.readmore {
-	text-decoration-color: none;
-	font-size: 20px;
-}
-
 .menuitems {
 	border: 1px solid black;
 	padding-left: 30px;
@@ -49,6 +44,19 @@ footer {
 	padding-top: 2px;
 	padding-bottom: 2px;
     font-size: 20px;
+}
+
+.blogpost {
+	background-color: #fff;
+    text-align: center;
+    border: 1px solid black;
+    width: 300px;
+    margin: auto;
+}
+
+.readmore {
+	text-decoration-color: none;
+	font-size: 20px;
 }
 
 .inside_articles {
@@ -59,15 +67,14 @@ footer {
     padding-left: 25px;
 }
 
-.row {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+/* This part of CSS is solely dedicated to the post grids.*/
 
-.blogpost {
-	background-color: #fff;
-    text-align: center;
-    border: 1px solid black;
-    width: 300px;
-    margin: auto;
+.postgrid {
+	display: grid;
+  	grid-template-columns: auto auto;
+  	grid-gap: 10px;
+	padding-left: 100px;
+	padding-right: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
