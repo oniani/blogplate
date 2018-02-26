@@ -5,7 +5,7 @@ header {
 
 h1 {
 	text-align: center;
-    border: 7px solid blue;
+    border: 7px solid white;
     width: 350px;
     height: 25px;
     padding: 25px;    
@@ -15,17 +15,17 @@ h1 {
 
 h2 {
 	text-align: center;
-    color: blue;
+    color: black;
 }
 
 body {
-    background-color: #B1CBBB;
+    background-color: #fff;
 }
 
 article {
     text-align: center;
-    border: 7px solid blue;
-    width: 450px;
+    border: 1px solid black;
+    width: 500px;
     margin: auto;
 }
 
