@@ -86,7 +86,7 @@ This is the start of the <div> and <span> based code */
 .postgrid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
+    grid-gap: 25px;
     padding-left: 200px;
     padding-right: 700px;
     padding-top: 10px;
