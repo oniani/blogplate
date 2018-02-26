@@ -35,7 +35,10 @@ article {
 
 .menuitems {
 	border: 1px solid black;
-	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 2px;
+	padding-bottom: 2px;
     font-size: 20px;
 }
 
