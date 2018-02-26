@@ -34,6 +34,16 @@ article {
     margin: auto;
 }
 
+a {
+    color: #000;
+}
+
+footer {
+	text-align: left;
+}
+
+/* This is the start of the <div> and <span> based code*/
+
 .readmore {
 	text-decoration-color: none;
 	font-size: 20px;
@@ -48,7 +58,7 @@ article {
     font-size: 20px;
 }
 
-.inside_articles{
+.inside_articles {
     border: none;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -56,10 +66,23 @@ article {
     padding-left: 25px;
 }
 
-a {
-    color: #000;
+.row {
+	padding-right: 500px;
+
 }
 
-footer {
-	text-align: left;
+/* Create two equal columns that floats next to each other */
+.column {
+	box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: auto;
+    padding-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: grid;
+    clear: both;
 }
