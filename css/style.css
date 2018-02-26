@@ -5,7 +5,7 @@ header {
 
 h1 {
 	text-align: center;
-    border: 7px solid white;
+    border: 7px;
     width: 350px;
     height: 25px;
     padding: 25px;    
@@ -19,14 +19,17 @@ h2 {
 }
 
 body {
-    background-color: #fff;
+    background-color: hsla(120,100%,25%,0.3);
 }
 
 article {
+	background-color: #fff;
     text-align: center;
     border: 1px solid black;
     width: 300px;
     margin: auto;
+	display: grid;
+	padding: 10px;
 }
 
 footer {
