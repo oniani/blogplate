@@ -65,24 +65,3 @@ footer {
     padding-right: 25px;
     padding-left: 25px;
 }
-
-.row {
-	padding-right: 500px;
-
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-	box-sizing: border-box;
-    float: left;
-    width: 50%;
-    padding: auto;
-    padding-top: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: grid;
-    clear: both;
-}
