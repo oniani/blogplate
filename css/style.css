@@ -73,8 +73,8 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
-    padding-left: 100px;
-    padding-right: 500px;
+    padding-left: 200px;
+    padding-right: 700px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
