@@ -70,7 +70,7 @@ This is the start of the <div> and <span> based code */
 }
 
 .publication {
-	display: grid;
+    display: grid;
 }
 
 .readmore {
