@@ -1,15 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 
 html * {
-   font-family: "Open Sans" !important;
+    font-family: "Open Sans" !important;
 }
 
 header {
-	text-align: center;
+    text-align: center;
 }
 
 h1 {
-	text-align: center;
+    text-align: center;
     width: 350px;
     height: 25px;
     padding: 25px;    
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-	text-align: center;
+    text-align: center;
     color: black;
 }
 
@@ -32,17 +32,17 @@ a {
 }
 
 footer {
-	text-align: left;
+    text-align: left;
 }
 
 /* This is the start of the <div> and <span> based code*/
 
 .menuitems {
-	border: 1px solid black;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-size: 20px;
 }
 
@@ -55,8 +55,8 @@ footer {
 }
 
 .readmore {
-	text-decoration-color: none;
-	font-size: 20px;
+    text-decoration-color: none;
+    font-size: 20px;
 }
 
 .inside_articles {
@@ -70,11 +70,11 @@ footer {
 /* This part of CSS is solely dedicated to the post grids.*/
 
 .postgrid {
-	display: grid;
-  	grid-template-columns: auto auto;
-  	grid-gap: 10px;
-	padding-left: 100px;
-	padding-right: 500px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding-left: 100px;
+    padding-right: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
