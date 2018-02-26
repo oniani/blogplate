@@ -9,20 +9,84 @@
 		<body>
 
 			<header>
-				<h1>Blog Title</h1>
+				<div class="title"><h1>Blog Title</h1></div>
 				<span class="menuitems"><a href="index.html" style="text-decoration:none">Blog</a></span>
 				<span class="menuitems"><a href="about.html" style="text-decoration:none">About</a></span>
 			</header>
 
+			<h1>
+			  <a href="" class="textwriter" data-period="2000" data-type='[ "QUESTION.", "REASON.", "EXPLORE.", "RESEARCH.", "DISCOVER."]'>
+			    <span class="wrap"></span>
+			  </a>
+			</h1>
+
+			<script>
+					var TxtType = function(el, toRotate, period) {
+			        this.toRotate = toRotate;
+			        this.el = el;
+			        this.loopNum = 0;
+			        this.period = parseInt(period, 10) || 2000;
+			        this.txt = '';
+			        this.tick();
+			        this.isDeleting = false;
+			   		 };
+
+			    	TxtType.prototype.tick = function() {
+			        var i = this.loopNum % this.toRotate.length;
+			        var fullTxt = this.toRotate[i];
+
+			        if (this.isDeleting) {
+			        this.txt = fullTxt.substring(0, this.txt.length - 1);
+			        } else {
+			        this.txt = fullTxt.substring(0, this.txt.length + 1);
+			        }
+
+			        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+			        var that = this;
+			        var delta = 200 - Math.random() * 100;
+
+			        if (this.isDeleting) { delta /= 2; }
+
+			        if (!this.isDeleting && this.txt === fullTxt) {
+			        delta = this.period;
+			        this.isDeleting = true;
+			        } else if (this.isDeleting && this.txt === '') {
+			        this.isDeleting = false;
+			        this.loopNum++;
+			        delta = 500;
+			        }
+
+				    setTimeout(function() {
+				        that.tick();
+				        }, delta);
+				    };
+
+				    window.onload = function() {
+		        	var elements = document.getElementsByClassName('textwriter');
+		        	for (var i=0; i<elements.length; i++) {
+		            var toRotate = elements[i].getAttribute('data-type');
+		            var period = elements[i].getAttribute('data-period');
+		            if (toRotate) {
+		            new TxtType(elements[i], JSON.parse(toRotate), period);
+		            }
+		        	}
+		        // ADD SOME CSS
+			        var css = document.createElement("style");
+			        css.type = "text/css";
+			        css.innerHTML = ".textwriter > .wrap { border-right: 0.08em solid #fff}";
+			        document.body.appendChild(css);
+				    };
+				</script>
+
 			<main>
-				<h2>Welcome to the blog!</h2>
 				<div class="postgrid">
 					<div class="blogpost">
 						<article>
 							<h3>ASTRONAUT AND NATURE</h3>
-						    <img src="images/image01.jpg" alt="Astronaut" width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
+						    <img src="images/image01.jpg" alt="Astronaut" width="500">
 						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						  	<span class="publication"><p>Published: <time datetime="2018-02-24T21:00">February 25, 2018</time>.</p></span>
 						  	<div class="readmore"><a href="blog/blogpost01.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
 						</article>
 					</div>
@@ -30,9 +94,9 @@
 					<div class="blogpost">
 						<article>
 							<h3>GIRL SHAKING HEAD</h3>
-						    <img src="images/image02.jpg" alt=Girl width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
+						    <img src="images/image02.jpg" alt=Girl width="500">
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						    <span class="publication"><p>Published: <time datetime="2018-02-24T21:00">February 25, 2018</time>.</p></span>
 						    <div class="readmore"><a href="blog/blogpost02.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
 						</article>
 					</div>
@@ -40,9 +104,9 @@
 					<div class="blogpost">
 						<article>
 							<h3>GUY FROM THE TRIBE</h3>
-						    <img src="images/image03.jpg" alt=Tribal width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
+						    <img src="images/image03.jpg" alt=Tribal width="500">
 						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						  	<span class="publication"><p>Published: <time datetime="2018-02-24T21:00">February 25, 2018</time>.</p></span>
 						  	<div class="readmore"><a href="blog/blogpost03.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
 						</article>
 					</div>
@@ -50,9 +114,9 @@
 					<div class="blogpost">
 						<article>
 							<h3>LADY WITH BALLOON</h3>
-						    <img src="images/image04.jpg" alt=Balloon width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
+						    <img src="images/image04.jpg" alt=Balloon width="500">
 						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+							<span class="publication"><p>Published: <time datetime="2018-02-24T21:00">February 25, 2018</time>.</p></span>
 						  	<div class="readmore"><a href="blog/blogpost04.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
 						</article>
 					</div>
@@ -60,69 +124,33 @@
 					<div class="blogpost">
 						<article>
 							<h3>THE HAND</h3>
-						    <img src="images/image05.jpg" alt=Hand width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
+						    <img src="images/image05.jpg" alt=Hand width="500">
 						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						  	<span class="publication"><p>Published: <time datetime="2018-02-24T21:00">February 25, 2018</time>.</p></span>
 						  	<div class="readmore"><a href="blog/blogpost05.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
+
 						</article>
 					</div>
 
 					<div class="blogpost">
 						<article>
 							<h3>ORION NEBULA</h3>
-						    <img src="images/image06.jpg" alt=ONebula width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
+						    <img src="images/image06.jpg" alt=ONebula width="500">
 						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						  	<span class="publication"><p>Published: <time datetime="2018-02-24T21:00">February 25, 2018</time>.</p></span>
 						  	<div class="readmore"><a href="blog/blogpost06.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
 						</article>
 					</div>
-
-					<div class="blogpost">
-						<article>
-							<h3>THIS IS A GUY WITH BACKPACK</h3>
-						    <img src="images/image07.jpg" alt=Backpack width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
-						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-						  	<div class="readmore"><a href="blog/blogpost07.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<h3>THIS IS A BASKETBALL BASKET</h3>
-						    <img src="images/image08.jpg" alt=Basketball width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
-						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-						  	<div class="readmore"><a href="blog/blogpost08.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<h3>THIS IS A NEBULA</h3>
-						    <img src="images/image09.jpg" alt=Nebula width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
-						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-						  	<div class="readmore"><a href="blog/blogpost09.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<h3>THIS IS AN AMERICAN FLAG</h3>
-						    <img src="images/image10.jpg" alt=America width="300" height="150">
-						    <p>Published: <time datetime="2018-02-24T21:00">February 24, 2018</time>.</p>
-						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-						  	<div class="readmore"><a href="blog/blogpost10.html" style="text-decoration:none" target="_blank">READ MORE</a></div>
-						</article>
-					</div>
+					
 				</div>
 			</main>
 
 			</footer>
 				<hr>
-				<p>&copy; 2018 Uknown Company <br />
-				ALL RIGHTS RESERVED</p>
+				<div class="footer">
+					<p>&copy; 2018 BLOG <br />
+					ALL RIGHTS RESERVED</p>
+				</div>
 			</footer>
 
 		</body>
