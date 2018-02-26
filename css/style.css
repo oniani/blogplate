@@ -27,7 +27,7 @@ This is the start of the <div> and <span> based code */
     color: #FFF !important;
     text-align: center;
     font-size: 40px;
-	text-shadow: 8px -6px 3px rgba(0, 0, 0, 1);
+	text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
 }
 
 .menuitems {
@@ -36,7 +36,7 @@ This is the start of the <div> and <span> based code */
     font-size: 30px;
     margin-left: -380px;
     margin-right: 400px;
-	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
 }
 
 .textwriter {
