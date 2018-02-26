@@ -48,6 +48,14 @@ article {
     font-size: 20px;
 }
 
+.inside_articles{
+    border: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 a {
     color: #000;
 }
