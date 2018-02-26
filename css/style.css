@@ -57,25 +57,25 @@ This is the start of the <div> and <span> based code */
 }
 
 .readmore {
-	font-size: 15px;
-	background-color: #000;
-	color: #fff;
-	display: inline-block;
-	position: relative;
-	top: 30px;
-	padding-left: 8px;
-	padding-right: 8px;
-	text-align: center;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
 }
 
 .inside_articles {
-	display: inline-block;
-	background: white;
-	color: black;
-	margin-right: 150px;
-	margin-left: 150px;
-	margin-top: 100px;
-	margin-bottom: 100px;
+    display: inline-block;
+    background: white;
+    color: black;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border: none;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -95,6 +95,6 @@ This is the start of the <div> and <span> based code */
 }
 
 .footer {
-	color: white;
-	padding-left: 50px;
+    color: white;
+    padding-left: 50px;
 }
