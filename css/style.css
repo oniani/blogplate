@@ -26,13 +26,6 @@ body {
     background-color: hsla(120,100%,25%,0.3);
 }
 
-article {
-	background-color: #fff;
-    text-align: center;
-    border: 1px solid black;
-    width: 300px;
-    margin: auto;
-}
 
 a {
     color: #000;
@@ -64,4 +57,17 @@ footer {
     padding-bottom: 50px;
     padding-right: 25px;
     padding-left: 25px;
+}
+
+.row {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blogpost {
+	background-color: #fff;
+    text-align: center;
+    border: 1px solid black;
+    width: 300px;
+    margin: auto;
 }
