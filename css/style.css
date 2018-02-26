@@ -107,3 +107,8 @@ This is the start of the <div> and <span> based code */
     color: white;
     padding-left: 50px;
 }
+
+.waste {
+	color: #40474f;
+	font-size: 1px; 
+}
