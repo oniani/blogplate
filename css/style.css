@@ -1,11 +1,9 @@
-
 header {
 	text-align: center;
 }
 
 h1 {
 	text-align: center;
-    border: 7px;
     width: 350px;
     height: 25px;
     padding: 25px;    
@@ -28,12 +26,25 @@ article {
     border: 1px solid black;
     width: 300px;
     margin: auto;
-	display: grid;
-	padding: 10px;
 }
 
+.readmore {
+	text-decoration-color: none;
+	font-size: 20px;
+}
+
+.menuitems {
+	border: 1px solid black;
+	padding: 10px;
+    font-size: 20px;
+}
+
+
+a {
+    color: #000;
+}
+
+
 footer {
-	align-content: center;
-	text-align: center;
-	text-align: center;
+	text-align: left;
 }
