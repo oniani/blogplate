@@ -27,6 +27,7 @@ This is the start of the <div> and <span> based code */
     color: #FFF !important;
     text-align: center;
     font-size: 40px;
+	text-shadow: 8px -6px 3px rgba(0, 0, 0, 1);
 }
 
 .menuitems {
@@ -35,6 +36,7 @@ This is the start of the <div> and <span> based code */
     font-size: 30px;
     margin-left: -380px;
     margin-right: 400px;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 .textwriter {
@@ -43,10 +45,25 @@ This is the start of the <div> and <span> based code */
     text-align: center;
     color: white;
     text-decoration: none !important;
+    text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
+}
+
+.postgrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    padding-left: 200px;
+    padding-right: 700px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
 }
 
 .blogpost {
     background-color: #fff;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     text-align: center;
     width: 500px;
     height: 580px;
@@ -69,6 +86,9 @@ This is the start of the <div> and <span> based code */
 }
 
 .inside_articles {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     display: inline-block;
     background: white;
     color: black;
@@ -81,17 +101,6 @@ This is the start of the <div> and <span> based code */
     padding-bottom: 50px;
     padding-right: 25px;
     padding-left: 25px;
-}
-
-.postgrid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 25px;
-    padding-left: 200px;
-    padding-right: 700px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 50px;
 }
 
 .footer {
