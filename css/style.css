@@ -54,7 +54,7 @@ This is the start of the <div> and <span> based code */
 
 .postgrid {
     display: grid;
-    grid-template-columns: 340px 340px;
+    grid-template-columns: 340px 340px 340px;
     grid-template-rows: 440px 440px;
     grid-gap: 30px;
     margin-top: 50px;
