@@ -9,7 +9,7 @@ header {
 }
 
 body {
-	background-color: #40474f;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
 a {
@@ -71,28 +71,33 @@ This is the start of the <div> and <span> based code */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.ptitle {
+.posttitle {
+    display: block;
+    padding: 10px;
     font-size: 20px;
-    background-color: #272932;
+    font-weight: bold;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
 }
 
 .frontimage {
     max-width: 100%;
-    max-height: 100%;
+    height: 227px;
 }
 
 .publication {
     display: grid;
+    margin-bottom: 10px;
 }
 
 .readmore {
-    border: 3px solid white;
+    display: block;
     font-size: 20px;
     font-weight: bold;
-    background-color: #272932;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     text-align: center;
     color: white;
+    padding: 5px;
 }
 
 /* This part is for the article design */
