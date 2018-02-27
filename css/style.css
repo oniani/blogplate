@@ -72,7 +72,7 @@ This is the start of the <div> and <span> based code */
 }
 
 .ptitle {
-    font-size: 25px;
+    font-size: 20px;
     background-color: #272932;
     color: white;
 }
@@ -88,7 +88,7 @@ This is the start of the <div> and <span> based code */
 
 .readmore {
     border: 3px solid white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: #272932;
     text-align: center;
