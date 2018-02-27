@@ -72,6 +72,7 @@ This is the start of the <div> and <span> based code */
 }
 
 .ptitle {
+    font-family: "Open Sans" !important;
     font-size: 25px;
     background-color: #272932;
     color: white;
