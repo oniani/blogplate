@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 
+@media only screen and (max-width: 320px) {
+
+   body {
+      font-size: 25px;
+   }
+
+}
+
 html * {
     font-family: "Open Sans" !important;
 }
@@ -23,6 +31,8 @@ footer {
 /* -------------------------------------------------------------------------------
 This is the start of the <div> and <span> based code */
 
+/*This deals with the title, textwriter, and menu items*/
+
 .title {
     color: #FFF !important;
     text-align: center;
@@ -30,7 +40,7 @@ This is the start of the <div> and <span> based code */
     text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
 }
 
-.menuitems {
+.menuitem {
     color: black !important;
     margin-top: 2px;
     font-size: 30px;
@@ -48,25 +58,36 @@ This is the start of the <div> and <span> based code */
     text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
 }
 
+/* This part is solely dedicated to frontpage bp alignment */
+
 .postgrid {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 25px;
-    padding-left: 200px;
-    padding-right: 700px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    grid-template-columns: 340px 340px;
+    grid-template-rows: 440px 440px;
+    grid-gap: 30px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
 .blogpost {
-    background-color: #fff;
+    background-color: white;
     text-align: center;
-    width: 500px;
-    height: 580px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.ptitle {
+    font-size: 25px;
+    background-color: #272932;
+    color: white;
+}
+
+.frontimage {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .publication {
@@ -74,16 +95,15 @@ This is the start of the <div> and <span> based code */
 }
 
 .readmore {
-    font-size: 15px;
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    top: 30px;
-    padding-left: 8px;
-    padding-right: 8px;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #272932;
     text-align: center;
+    color: white;
 }
+
+/* This part is for the article design */
 
 .inside_articles {
     display: inline-block;
@@ -110,5 +130,5 @@ This is the start of the <div> and <span> based code */
 
 .waste {
     color: #40474f;
-    font-size: 1px; 
+    font-size: 1px;
 }
