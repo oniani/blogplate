@@ -20,7 +20,7 @@
 				</h1>
 
 			<script>
-					var TxtType = function(el, toRotate, period) {
+				var TxtType = function(el, toRotate, period) {
 			        this.toRotate = toRotate;
 			        this.el = el;
 			        this.loopNum = 0;
@@ -28,7 +28,7 @@
 			        this.txt = '';
 			        this.tick();
 			        this.isDeleting = false;
-			   		};
+			   	};
 
 			    	TxtType.prototype.tick = function() {
 			        var i = this.loopNum % this.toRotate.length;
@@ -56,26 +56,26 @@
 			        delta = 500;
 			        }
 
-					setTimeout(function() {
-					that.tick();
-					}, delta);
-					};
+				setTimeout(function() {
+				that.tick();
+				}, delta);
+				};
 
-					window.onload = function() {
+				window.onload = function() {
 			        var elements = document.getElementsByClassName('textwriter');
 			        for (var i=0; i<elements.length; i++) {
-					var toRotate = elements[i].getAttribute('data-type');
-					var period = elements[i].getAttribute('data-period');
-					if (toRotate) {
-					new TxtType(elements[i], JSON.parse(toRotate), period);
-					}
+				var toRotate = elements[i].getAttribute('data-type');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+				new TxtType(elements[i], JSON.parse(toRotate), period);
+				}
 		        	}
 		        	// ADD SOME CSS
 			        var css = document.createElement("style");
 			        css.type = "text/css";
 			        css.innerHTML = ".textwriter > .wrap { border-right: 0.08em solid #fff}";
 			        document.body.appendChild(css);
-				    };
+				};
 			</script>
 
 				<span class="menuitem"><a href="index.html" style="text-decoration:none">Blog</a></span>
