@@ -24,8 +24,8 @@ footer {
     text-align: left;
 }
 
-/* -------------------------------------------------------------------------------
-This is the start of the <div> and <span> based code */
+/*This is the start of the <div> and <span> based code
+----------------------------------------------------------------------------*/
 
 /*This deals with the title, textwriter, and menu items*/
 
@@ -162,37 +162,35 @@ This is the start of the <div> and <span> based code */
 /* Slideshow buttons */
 
 .slideshowbuttonright {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     border: none;
     color: white;
     padding: 6px 30px;
-    position: absolute;
     display: inline-block;
-    transform: translate(-569.2%, -800%);
-    -ms-transform: translate(-50%, -50%);
     font-size: 16px;
     margin: auto;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .slideshowbuttonleft {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     border: none;
     color: white;
     padding: 6px 30px;
-    position: absolute;
     display: inline-block;
-    transform: translate(469%, -800%);
-    -ms-transform: translate(-50%, -50%);
     font-size: 16px;
     margin: auto;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.slideshowbuttonleft:hover {
+    color: black;
+}
+
+.slideshowbuttonright:hover {
+    color: black;
 }
 
 /* Front-page caption for posts*/
