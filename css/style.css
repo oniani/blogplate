@@ -100,7 +100,7 @@ This is the start of the <div> and <span> based code */
     list-style-position: none;
     padding-left: 0;
     width: 400px;
-    height: 260px;
+    height: 360px;
     overflow: scroll;
 }
 
@@ -133,7 +133,7 @@ This is the start of the <div> and <span> based code */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-gap: 30px;
+    grid-gap: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 600px;
