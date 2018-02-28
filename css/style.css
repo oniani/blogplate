@@ -161,6 +161,46 @@ This is the start of the <div> and <span> based code */
     max-width: 100%;
 }
 
+/* Slideshow buttons */
+
+.slideshowbuttonright {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transform: translate(-463%, -800%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.slideshowbuttonleft {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transform: translate(463%, -800%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Front-page caption for posts*/
+
 .caption {
     color: black;
     text-align: center;
