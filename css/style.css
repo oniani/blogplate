@@ -40,8 +40,8 @@ This is the start of the <div> and <span> based code */
 
 .menuitem {
     font-size: 30px;
-    margin-left: 370px;
-    margin-right: -550px;
+    margin-left: 380px;
+    margin-right: -560px;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
 }
 
@@ -52,6 +52,7 @@ This is the start of the <div> and <span> based code */
     color: white;
     text-decoration: none !important;
     text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
+    font-weight: 500;
 }
 
 /* This is the CSS for the archive. */
@@ -73,11 +74,9 @@ This is the start of the <div> and <span> based code */
 
 .sidebar {
     position: absolute;
-    z-index: 1;
     top: 400px;
     right: 80px;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    overflow-x: hidden;
     -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
