@@ -167,8 +167,6 @@ This is the start of the <div> and <span> based code */
     color: white;
     padding: 6px 30px;
     position: absolute;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
     transform: translate(-569.2%, -800%);
     -ms-transform: translate(-50%, -50%);
@@ -186,8 +184,6 @@ This is the start of the <div> and <span> based code */
     color: white;
     padding: 6px 30px;
     position: absolute;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
     transform: translate(469%, -800%);
     -ms-transform: translate(-50%, -50%);
