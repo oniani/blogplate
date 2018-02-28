@@ -168,15 +168,16 @@ This is the start of the <div> and <span> based code */
     border: none;
     color: white;
     padding: 6px 30px;
+    position: absolute;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    transform: translate(-463%, -800%);
+    transform: translate(-569.2%, -800%);
     -ms-transform: translate(-50%, -50%);
     font-size: 16px;
-    margin: 4px 2px;
+    margin: auto;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -186,15 +187,16 @@ This is the start of the <div> and <span> based code */
     border: none;
     color: white;
     padding: 6px 30px;
+    position: absolute;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    transform: translate(463%, -800%);
+    transform: translate(469%, -800%);
     -ms-transform: translate(-50%, -50%);
     font-size: 16px;
-    margin: 4px 2px;
+    margin: auto;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -213,10 +215,12 @@ This is the start of the <div> and <span> based code */
 .publication {
     display: block;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    font-size: 16px;
     color: white;
     margin-bottom: 12px;
     text-align: center;
-    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .readmore {
