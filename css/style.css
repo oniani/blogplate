@@ -1,3 +1,50 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------------------------------------------------------------*/
+
 html * {
     font-family: "Open Sans";
 }
@@ -18,34 +65,13 @@ body {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     border: 1px solid white;
     padding: 50px;
+    border-top: none;
+    border-bottom: none;
+    border-width: 10px;
 	line-height: 1.5;
 	color: #5b5b5b;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 50px;
-	border-top: none;
-    border-bottom: none;
-    border-width: 10px;
-}
-
-.backtop {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-	text-decoration: none;
-}
-
-.backtop:hover {
-	background-color: grey;
 }
 
 /*This is the start of the <div> and <span> based code
@@ -65,7 +91,6 @@ cases so take care if deleting the .title from here */
 .menu {
 	list-style-type: none;
 	padding: 0;
-    border: 1px solid white;
 }
 
 .menu li {
@@ -88,7 +113,7 @@ cases so take care if deleting the .title from here */
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  width: 50%;
+  max-width: 50%;
   grid-gap: 50px;
   padding: 10px;
 }
@@ -113,8 +138,7 @@ cases so take care if deleting the .title from here */
 }
 
 article img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
 }
 
 /* This is the CSS for the archive that is a modified sidebar. */
@@ -236,13 +260,38 @@ article .button a {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
+/* This is how we get back to top */
+.backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+	text-decoration: none;
+}
+
+.backtop:hover {
+	background-color: grey;
+}
+
 /* This part is for the footer */
 
 footer {
     margin-top: 50px;
-    padding-left: 50px;
     text-align: left;
     color: white;
+    border: 5px solid white;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 25px;
 }
 
 
