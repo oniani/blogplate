@@ -1,49 +1,287 @@
 html * {
-    font-family: "Open Sans" !important;
+    font-family: "Open Sans";
 }
 
 header {
     text-align: center;
+    line-height: 1.5;
+    color: #5b5b5b;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #efefef;
+    border-width: 5px;
+    margin-bottom: 100px;
 }
 
 body {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    border: 1px solid white;
+    padding: 50px;
+	line-height: 1.5;
+	color: #5b5b5b;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+	border-top: none;
+    border-bottom: none;
+    border-width: 10px;
 }
 
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 2em 0;
-}
-
-a {
+.backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #3498db;
     color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+	text-decoration: none;
+}
+
+.backtop:hover {
+	background-color: #555;
 }
 
 footer {
     text-align: left;
+    margin-top: 50px;
 }
 
 /*This is the start of the <div> and <span> based code
 ----------------------------------------------------------------------------*/
 
-/*This deals with the title, textwriter, and menu items*/
+/* This is an important part of the code. Attribute "title is also used in other
+cases so take care if deleting the .title from here */
 
 .title {
     color: #FFF !important;
     text-align: center;
     font-size: 40px;
-    text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
 }
 
-.menuitem {
+/* This deals with the main menu */
+
+.menu {
+	list-style-type: none;
+	padding: 0;
+    border: 1px solid white;
+}
+
+.menu li {
+	display: inline;
+	padding: 10px 20px 10px 0px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+
+.menu a:hover {
+	color: #545AA7;
+}
+
+/* This part is solely dedicated to the front-page blogposts' alignment */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  width: 50%;
+  grid-gap: 50px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.posttitle {
+    display: block;
+    padding: 10px;
     font-size: 30px;
-    margin-left: 380px;
-    margin-right: -560px;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
 }
 
-.textwriter {
+article img {
+    width: 100%;
+    height: auto;
+}
+
+/* This is the CSS for the archive that is a modified sidebar. */
+
+.sideblock {
+    position: absolute;
+    z-index: 1;
+    top: 550px;
+    right: 220px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 50 30 50 30;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+}
+
+.sideblock a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.sideblock a:hover {
+    color: #545AA7;
+}
+
+.main {
+    margin-left: 140px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sideblock {padding-top: 15px;}
+    .sideblock a {font-size: 18px;}
+}
+
+.list {
+    list-style-position: none;
+    padding-left: 0;
+    width: 320px;
+    height: 320px;
+    overflow: scroll;
+    text-transform: uppercase;
+}
+
+.sideblock h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* Front-page caption for posts*/
+
+article p {
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    max-height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.publication {
+    display: block;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    font-size: 16px;
+    color: white;
+    margin-bottom: 12px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+article .button {
+  border-radius: 28px;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+article .button:hover {
+  background: #3cb0fd;
+}
+
+article .button a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+/* This part is for the article design */
+
+.inside_articles {
+    display: inline-block;
+    background: white;
+    color: black;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* This part is for the footer */
+
+.footer {
+    color: white;
+    padding-left: 50px;
+}
+
+/* This is the end of the style.css file */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+
+/* .waste {
+    color: #40474f;
+    font-size: 1px;
+} */
+
+/*This deals with the title and textwriter*/
+
+/* .textwriter {
     margin-right: 600px;
     margin-left: 580px;
     text-align: center;
@@ -51,11 +289,11 @@ footer {
     text-decoration: none !important;
     text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
     font-weight: 500;
-}
+} */
 
 /* This is the CSS for the biography. */
 
-.biotitle {
+/* .biotitle {
     font-size: 30px;
     text-align: center;
     color: white;
@@ -84,84 +322,11 @@ footer {
     -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-}
-
-/* This is the CSS for the archive. */
-
-.archivetitle {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
-
-.archivelist {
-    list-style-position: none;
-    padding-left: 0;
-    width: 400px;
-    height: 360px;
-    overflow: scroll;
-}
-
-.sidebar {
-    position: absolute;
-    top: 1150px;
-    right: 80px;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-}
-
-.sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    font-size: 20px;
-}
-
-.sidebar a:hover {
-    color: black;
-}
-
-/* This part is solely dedicated to frontpage bp alignment */
-
-.postgrid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 600px;
-    margin-left: 50px;
-}
-
-.blogpost {
-    background-color: white;
-    text-align: center;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-.posttitle {
-    display: block;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
-}
-
-.frontimage {
-    max-width: 100%;
-}
+} */
 
 /* Slideshow buttons */
 
-.slideshowbuttonright {
+/* .slideshowbuttonright {
     border: none;
     color: white;
     padding: 6px 30px;
@@ -189,66 +354,4 @@ footer {
 
 .slideshowbuttonright:hover {
     color: black;
-}
-
-/* Front-page caption for posts*/
-
-.caption {
-    color: black;
-    text-align: center;
-    line-height: 1.5;
-    max-height: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.publication {
-    display: block;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    font-size: 16px;
-    color: white;
-    margin-bottom: 12px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.readmore {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    text-align: center;
-    color: white;
-    padding: 5px;
-}
-
-/* This part is for the article design */
-
-.inside_articles {
-    display: inline-block;
-    background: white;
-    color: black;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 25px;
-    padding-left: 25px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-.footer {
-    color: white;
-    padding-left: 50px;
-}
-
-.waste {
-    color: #40474f;
-    font-size: 1px;
-}
+} */

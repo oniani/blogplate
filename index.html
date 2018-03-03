@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 	<html>
+
 		<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,111 +14,105 @@
 			<header>
 				<div class="title"><h1>Blog Title</h1></div>
 
-				<h1>
+				<!-- <h1>
 				  	<a href="" class="textwriter" data-period="2000" data-type='[ "QUESTION.", "REASON.", "EXPLORE.", "RESEARCH.", "DISCOVER."]'>
 				    <span class="wrap"></span>
 				  	</a>
 				  	<span class="waste">Hello!</span>
-				</h1>
-				<script type="text/javascript" src="js/typewriter.js"></script>
-				<span class="menuitem"><a href="about.html" style="text-decoration:none">About</a></span>
-				<span class="menuitem"><a href="index.html" style="text-decoration:none">Blog</a></span>
+				</h1> -->
+				<!-- <script type="text/javascript" src="js/typewriter.js"></script> -->
+				<ul class="menu">
+				<li><a href="index.html" target="_blank">Blog</a></li>
+				<li><a href="about.html" target="_blank">About</a></li>
+				</ul>
 			</header>
 
 			<main>
-				<div class="bio">
+				<!-- <div class="bio">
 					<h1 class="biotitle">Who I am</h1>
 					<img class="bioimage" src="images/hollow.jpeg" alt=picture>
 					<p class="biotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div> -->
+
+
+				<div class="grid-container">
+					<article class="grid-item">
+						<span class="posttitle">COSMONAUT</span>
+					    <img src="images/image01.jpg" alt=Cosmonaut>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+					    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
+					    <a  class="button" href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a>
+					</article>
+
+					<article class="grid-item">
+						<span class="posttitle">COSMONAUT</span>
+					    <img src="images/image02.jpg" alt=Cosmonaut>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+					    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
+					    <a class="button" href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a>
+					</article>
+
+					<article class="grid-item">
+						<span class="posttitle">COSMONAUT</span>
+					    <img src="images/image03.jpg" alt=Cosmonaut>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+					    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
+					    <a class="button" href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a>
+					</article>
+
+					<article class="grid-item">
+						<span class="posttitle">COSMONAUT</span>
+					    <img src="images/image04.jpg" alt=Cosmonaut>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+					    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
+					    <a class="button" href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a>
+					</article>
+
+					<article class="grid-item">
+						<span class="posttitle">COSMONAUT</span>
+					    <img src="images/image05.jpg" alt=Cosmonaut>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+					    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
+					    <a class="button" href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a>
+					</article>
+
+					<article class="grid-item">
+						<span class="posttitle">COSMONAUT</span>
+					    <img src="images/image06.jpg" alt=Cosmonaut>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+					    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
+					    <a class="button" href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a>
+					</article>
 				</div>
 
-				<div class="sidebar">
-					<h1 class="archivetitle">Archive</h1>
-					<hr>
-					<ul class="archivelist">
-						<li><a href="blog/blogpost01.html" style="text-decoration:none">ASTRONAUT</a></li>
-						<hr>
-						<li><a href="blog/blogpost02.html" style="text-decoration:none">GIRL SHAKING HEAD</a></li>
-						<hr>
-						<li><a href="blog/blogpost03.html" style="text-decoration:none">GUY FROM THE TRIBE</a></li>
-						<hr>
-						<li><a href="blog/blogpost04.html" style="text-decoration:none">LADY WITH BALLOON</a></li>
-						<hr>
-						<li><a href="blog/blogpost05.html" style="text-decoration:none">THE HAND</a></li>
-						<hr>
-						<li><a href="blog/blogpost06.html" style="text-decoration:none">ORION NEBULA</a></li>
-					</ul>
+				<div class="sideblock">
+				  <h1>Archive</h1>
+				  <hr>
+				  <ul class="list">
+					  <li><a href="#about">About</a></li>
+					  <hr>
+					  <li><a href="#services">Services</a></li>
+ 				  	  <hr>
+					  <li><a href="#clients">Clients</a></li>
+					  <hr>
+					  <li><a href="#contact">Contact</a></li>
+					  <hr>
+					  <li><a href="blog/blogpost01.html" style="text-decoration:none">ASTRONAUT</a></li>
+					  <hr>
+					  <li><a href="blog/blogpost02.html" style="text-decoration:none">GIRL SHAKING HEAD</a></li>
+					  <hr>
+					  <li><a href="blog/blogpost03.html" style="text-decoration:none">GUY FROM THE TRIBE</a></li>
+					  <hr>
+					  <li><a href="blog/blogpost04.html" style="text-decoration:none">LADY WITH BALLOON</a></li>
+					  <hr>
+					  <li><a href="blog/blogpost05.html" style="text-decoration:none">THE HAND</a></li>
+					  <hr>
+					  <li><a href="blog/blogpost06.html" style="text-decoration:none">ORION NEBULA</a></li>
+				  </ul>
 				</div>
 
-				<div class="postgrid">
-					<div class="blogpost">
-						<article>
-							<span class="posttitle">COSMONAUT</span>
-							<div>
-							  <img class="mySlides" src="images/image01.jpg" style="width:100%">
-							  <img class="mySlides" src="images/image02.jpg" style="width:100%">
-							  <img class="mySlides" src="images/image03.jpg" style="width:100%">
-							  <button class="slideshowbuttonright" onclick="plusDivs(-1)">&#10094;</button>
-							  <button class="slideshowbuttonleft" onclick="plusDivs(1)">&#10095;</button>
-							</div>
-							<script type="text/javascript" src="js/slideshow.js"></script>
-							<div class="caption"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-							<span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
-							<div class="readmore"><a href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a></div>
-						</article>
-					</div>
+				<a href="#top" class="backtop">Back to top</a>
 
-					<div class="blogpost">
-						<article>
-							<span class="posttitle">GIRL SHAKING HEAD</span>
-						    <img class="frontimage" src="images/image02.jpg" alt=Girl>
-						    <div class="caption"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-						    <span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
-						    <div class="readmore"><a href="blog/blogpost02.html" style="text-decoration:none">READ MORE</a></div>
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<span class="posttitle">GUY FROM THE TRIBE</span>
-						    <img class="frontimage" src="images/image03.jpg" alt=Tribal>
-						  	<div class="caption"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-						  	<span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
-						  	<div class="readmore"><a href="blog/blogpost03.html" style="text-decoration:none">READ MORE</a></div>
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<span class="posttitle">LADY WITH BALLOON</span>
-						    <img class="frontimage" src="images/image04.jpg" alt=Balloon>
-						  	<div class="caption"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-							<span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
-						  	<div class="readmore"><a href="blog/blogpost04.html" style="text-decoration:none">READ MORE</a></div>
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<span class="posttitle">THE HAND</span>
-						    <img class="frontimage" src="images/image05.jpg" alt=Hand>
-						  	<div class="caption"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-						  	<span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
-						  	<div class="readmore"><a href="blog/blogpost05.html" style="text-decoration:none">READ MORE</a></div>
-
-						</article>
-					</div>
-
-					<div class="blogpost">
-						<article>
-							<span class="posttitle">ORION NEBULA</span>
-						    <img class="frontimage" src="images/image06.jpg" alt=ONebula>
-						  	<div class="caption"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-						  	<span class="publication"><time datetime="2018-02-24T21:00">Published: February 25, 2018</time></span>
-						  	<div class="readmore"><a href="blog/blogpost06.html" style="text-decoration:none">READ MORE</a></div>
-						</article>
-					</div>
-				</div>
 			</main>
 
 			<footer>
