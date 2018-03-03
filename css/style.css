@@ -108,45 +108,13 @@ cases so take care if deleting the .title from here */
 	color: #545AA7;
 }
 
-/* This part is solely dedicated to the front-page blogposts' alignment */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  max-width: 50%;
-  grid-gap: 50px;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  text-align: center;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-.posttitle {
-    display: block;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
-}
-
-article img {
-    max-width: 100%;
-}
-
 /* This is the CSS for the archive that is a modified sidebar. */
 
 .sideblock {
     position: absolute;
     z-index: 1;
-    top: 550px;
+	width: 25%;
+    top: 400px;
     right: 220px;
     background: #eee;
     overflow-x: hidden;
@@ -195,10 +163,42 @@ article img {
     color: white;
 }
 
-/* Front-page caption for posts*/
+/* This part is solely dedicated to the front-page blogposts' alignment */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 50%;
+  grid-gap: 50px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.posttitle {
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+
+article img {
+    max-width: 100%;
+}
 
 article p {
     color: black;
+	margin: 10px;
     text-align: center;
     line-height: 1.5;
     max-height: 200px;
@@ -211,15 +211,16 @@ article p {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     font-size: 16px;
     color: white;
-    margin-bottom: 12px;
+    margin: 20px;
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
+	text-transform: uppercase;
+    padding: 10px;
 }
 
 article .button {
   border-radius: 28px;
   padding: 5px;
+  margin: 20px;
   display: block;
   text-align: center;
   text-decoration: none;
