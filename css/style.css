@@ -55,11 +55,8 @@ header {
     line-height: 1.5;
     background-color: #0F1C3F;
     color: #5b5b5b;
-    margin: 0 auto;
+    margin: auto;
     padding: 50px;
-    border: 1px solid white;
-    border-radius: 2.0em;
-    border-width: 5px;
     margin-bottom: 100px;
 }
 
@@ -155,8 +152,8 @@ a {
     background: #dbe5ea;
     border-radius: 0.5em;
     overflow: hidden;
-    left: 2.5em;
-	bottom: 3em;
+    left: 1em;
+	bottom: 1em;
 }
 
 .box-header {
@@ -191,6 +188,8 @@ a {
     margin: 1.5em auto; /* 2, 3 */
     max-width: 85em; /* 4 */
     padding: 0 1.5em; /* 2 */
+	position: relative;
+	bottom: 3em;
 }
 
 /**
@@ -223,7 +222,7 @@ a {
    */
 
 .container {
-    grid-template-columns: 2fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 
 /**
@@ -239,20 +238,31 @@ a {
 /* This part deals with the 2-column grid */
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  max-width: 100%;
-  grid-gap: 50px;
-  padding: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	max-width: 100%;
+	grid-gap: 50px;
+	padding: 10px;
 }
 
 .grid-item {
-  background-color: #dbe5ea;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  text-align: center;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	background-color: #dbe5ea;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	text-align: center;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.intro-grid-item{
+    text-align: center;
+	margin-bottom: 10em;
+}
+
+.intro-post-title {
+	font-size: 3em;
+	font-weight: bold;
+	color: black;
 }
 
 .posttitle {
