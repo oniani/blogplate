@@ -155,7 +155,7 @@ a {
     background: #dbe5ea;
     border-radius: 0.5em;
     overflow: hidden;
-    left: 5em;
+    left: 4em;
 }
 
 .box-header {
@@ -188,7 +188,7 @@ a {
 	display: grid; /* 1 */
     grid-gap: 5.0em; /* 2 */
     margin: 1.5em auto; /* 2, 3 */
-    max-width: 80em; /* 4 */
+    max-width: 85em; /* 4 */
     padding: 0 1.5em; /* 2 */
 }
 
