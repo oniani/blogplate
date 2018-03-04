@@ -80,6 +80,8 @@ cases so take care if deleting the .title from here */
     color: white;
     text-align: center;
     font-size: 40px;
+	padding: 0 0 2em 0;
+	font-size: 3em;
 }
 
 /* This deals with the main menu */
