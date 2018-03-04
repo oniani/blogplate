@@ -155,7 +155,8 @@ a {
     background: #dbe5ea;
     border-radius: 0.5em;
     overflow: hidden;
-    left: 4em;
+    left: 2.5em;
+	bottom: 3em;
 }
 
 .box-header {
