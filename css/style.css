@@ -112,13 +112,11 @@ cases so take care if deleting the .title from here */
 /* This deals with the textwriter */
 
 .textwriter {
-    margin-right: 600px;
-    margin-left: 580px;
-    text-align: center;
+    margin-left: 10%;
+	font-size: 5.0em;
+	padding: none;
     color: white;
     text-decoration: none;
-    text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
-    font-weight: 500;
 }
 
 .waste {
@@ -157,7 +155,7 @@ a {
     background: #dbe5ea;
     border-radius: 0.5em;
     overflow: hidden;
-    left: 7em;
+    left: 5em;
 }
 
 .box-header {
@@ -166,6 +164,7 @@ a {
     font-size: 1.25em;
     line-height: 1;
     padding: 1rem;
+	text-align: center;
 }
 
 .box-menu {
@@ -187,9 +186,9 @@ a {
 
 .container {
     display: grid; /* 1 */
-    grid-gap: 1.5em; /* 2 */
+    grid-gap: 3.0em; /* 2 */
     margin: 1.5em auto; /* 2, 3 */
-    max-width: 72em; /* 4 */
+    max-width: 80em; /* 4 */
     padding: 0 1.5em; /* 2 */
 }
 
