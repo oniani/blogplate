@@ -1,3 +1,5 @@
+/* Mayerweb CSS reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,7 +52,6 @@ html * {
 }
 
 header {
-    text-align: center;
     line-height: 1.5;
     color: #5b5b5b;
     max-width: 1200px;
@@ -91,11 +92,13 @@ cases so take care if deleting the .title from here */
 .menu {
 	list-style-type: none;
 	padding: 0;
+	text-align: right;
+	margin-top: 50px;
 }
 
 .menu li {
 	display: inline;
-	padding: 10px 20px 10px 0px;
+	padding: 30px;
 }
 
 .menu a {
@@ -105,70 +108,32 @@ cases so take care if deleting the .title from here */
 }
 
 .menu a:hover {
-	color: #545AA7;
+	color: #0099cc;
 }
 
-/* This is the CSS for the archive that is a modified sidebar. */
+/* This deals with the textwriter */
 
-.sideblock {
-    position: absolute;
-    z-index: 1;
-	width: 25%;
-    top: 400px;
-    right: 220px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 50 30 50 30;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-}
-
-.sideblock a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-}
-
-.sideblock a:hover {
-    color: #545AA7;
-}
-
-.main {
-    margin-left: 140px;
-    font-size: 28px;
-    padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-    .sideblock {padding-top: 15px;}
-    .sideblock a {font-size: 18px;}
-}
-
-.list {
-    list-style-position: none;
-    padding-left: 0;
-    width: 320px;
-    height: 320px;
-    overflow: scroll;
-    text-transform: uppercase;
-}
-
-.sideblock h1 {
-    font-size: 30px;
+.textwriter {
+    margin-right: 600px;
+    margin-left: 580px;
     text-align: center;
     color: white;
+    text-decoration: none;
+    text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
+    font-weight: 500;
+}
+
+.waste {
+    color: #40474f;
+    font-size: 1px;
 }
 
 /* This part is solely dedicated to the front-page blogposts' alignment */
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
-  max-width: 50%;
+  grid-template-columns: auto auto;
+  max-width: 100%;
   grid-gap: 50px;
   padding: 10px;
 }
@@ -176,7 +141,6 @@ cases so take care if deleting the .title from here */
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -232,7 +196,7 @@ article .button {
 }
 
 article .button:hover {
-  background: #3cb0fd;
+  background: #0099cc;
 }
 
 article .button a {
@@ -269,7 +233,7 @@ article .button a {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #555;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -279,14 +243,14 @@ article .button a {
 }
 
 .backtop:hover {
-	background-color: grey;
+	background: #0099cc;
 }
 
 /* This part is for the footer */
 
 footer {
-	background-color: #0099cc;
-    color: #ffffff;
+	background-color: white;
+    color: black;
     text-align: center;
     font-size: 12px;
     padding: 15px;
@@ -294,109 +258,3 @@ footer {
 }
 
 /* This is the end of the style.css file */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------------------------------------------------*/
-
-/* .waste {
-    color: #40474f;
-    font-size: 1px;
-} */
-
-/*This deals with the title and textwriter*/
-
-/* .textwriter {
-    margin-right: 600px;
-    margin-left: 580px;
-    text-align: center;
-    color: white;
-    text-decoration: none !important;
-    text-shadow: 5px -4px 3px rgba(0, 0, 0, 1);
-    font-weight: 500;
-} */
-
-/* This is the CSS for the biography. */
-
-/* .biotitle {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
-
-.bioimage {
-    width: 400px;
-    height: 360px;
-}
-
-.biotext {
-    color: white;
-    text-align: center;
-    line-height: 1.5;
-    max-height: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.bio {
-    position: absolute;
-    top: 400px;
-    right: 80px;
-    width: 400px;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-} */
-
-/* Slideshow buttons */
-
-/* .slideshowbuttonright {
-    border: none;
-    color: white;
-    padding: 6px 30px;
-    display: inline-block;
-    font-size: 16px;
-    margin: auto;
-    cursor: pointer;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-
-.slideshowbuttonleft {
-    border: none;
-    color: white;
-    padding: 6px 30px;
-    display: inline-block;
-    font-size: 16px;
-    margin: auto;
-    cursor: pointer;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-
-.slideshowbuttonleft:hover {
-    color: black;
-}
-
-.slideshowbuttonright:hover {
-    color: black;
-} */
