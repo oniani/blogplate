@@ -53,25 +53,23 @@ html * {
 
 header {
     line-height: 1.5;
+    background-color: #0F1C3F;
     color: #5b5b5b;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
-    border: 1px solid #efefef;
+    border: 1px solid white;
+    border-radius: 2.0em;
     border-width: 5px;
     margin-bottom: 100px;
 }
 
 body {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    border: 1px solid white;
-    padding: 50px;
+    background-color: white;
     border-top: none;
     border-bottom: none;
     border-width: 10px;
 	line-height: 1.5;
 	color: #5b5b5b;
-	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -82,7 +80,7 @@ body {
 cases so take care if deleting the .title from here */
 
 .title {
-    color: #FFF !important;
+    color: white;
     text-align: center;
     font-size: 40px;
 }
@@ -108,7 +106,7 @@ cases so take care if deleting the .title from here */
 }
 
 .menu a:hover {
-	color: #0099cc;
+    color: #0099cc;
 }
 
 /* This deals with the textwriter */
@@ -128,18 +126,117 @@ cases so take care if deleting the .title from here */
     font-size: 1px;
 }
 
-/* This deals with the bio sidebar */
+/* This deals with the main part of the front-page */
 
+/* Boilerplate */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
+body {
+    background: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
 
+a {
+    color: #456BD9;
+}
 
+/*
+.text * + * {
+    margin-top: 1rem;
+}
+ */
 
+.box {
+    position: relative;
+    background: #dbe5ea;
+    border-radius: 0.5em;
+    overflow: hidden;
+    left: 7em;
+}
 
+.box-header {
+    background: #0F1C3F;
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 1;
+    padding: 1rem;
+}
 
+.box-menu {
+    list-style: none;
+    padding: 0;
+}
 
+.box-menu > * + * {
+    border-top: 2px solid transparent;
+}
 
-/* This part is solely dedicated to the front-page blogposts' alignment */
+.box-menu a {
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    line-height: 1;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.container {
+    display: grid; /* 1 */
+    grid-gap: 1.5em; /* 2 */
+    margin: 1.5em auto; /* 2, 3 */
+    max-width: 72em; /* 4 */
+    padding: 0 1.5em; /* 2 */
+}
+
+/**
+ * Sidebar inherits grid display styles and gap size. This will be simpler once `display: subgrid` is supported!
+ */
+
+.sidebar {
+    display: inherit;
+    grid-gap: inherit;
+}
+
+/**
+ * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
+ */
+
+@media (min-width: 34em) and (max-width: 49.9375em) {
+    .sidebar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/**
+ * At even wider sizes…
+ */
+
+@media (min-width: 50em) {
+
+  /**
+   * Establish one primary (⅔) column and one secondary (⅓) column.
+   */
+
+.container {
+    grid-template-columns: 2fr 1fr;
+}
+
+/**
+* 1. Automatically create sidebar rows that are as short as their content will allow.
+* 2. Make this element span two rows, allowing prose elements to flow to its left.
+*/
+
+.sidebar {
+    grid-auto-rows: min-content; /* 1 */
+    grid-row: span 2; /* 2 */
+}
+
+/* This part deals with the 2-column grid */
 
 .grid-container {
   display: grid;
@@ -150,7 +247,7 @@ cases so take care if deleting the .title from here */
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #dbe5ea;
   border: 1px solid rgba(0, 0, 0, 0.8);
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -163,7 +260,7 @@ cases so take care if deleting the .title from here */
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: #0F1C3F;
     color: white;
 }
 
@@ -183,7 +280,7 @@ article p {
 
 .publication {
     display: block;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: #0F1C3F;
     font-size: 16px;
     color: white;
     margin: 20px;
@@ -193,21 +290,21 @@ article p {
 }
 
 article .button {
-  border-radius: 28px;
-  padding: 5px;
-  margin: 20px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    border-radius: 28px;
+    padding: 5px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #0F1C3F;
 }
 
 article .button:hover {
-  background: #0099cc;
+    background: #0099cc;
 }
 
 article .button a {
@@ -237,33 +334,34 @@ article .button a {
 }
 
 /* This is how we get back to top */
+
 .backtop {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 30px;
     z-index: 99;
     border: none;
     outline: none;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: #0F1C3F;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .backtop:hover {
-	background: #0099cc;
+    background: #7e98dd;
 }
 
 /* This part is for the footer */
 
 footer {
-	background-color: white;
-    color: black;
+	background-color: #0F1C3F;
+    color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     padding: 15px;
 	margin-top: 50px;
 }
