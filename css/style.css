@@ -285,14 +285,12 @@ article .button a {
 /* This part is for the footer */
 
 footer {
-    margin-top: 50px;
-    text-align: left;
-    color: white;
-    border: 5px solid white;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    padding-top: 25px;
+	background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+	margin-top: 50px;
 }
 
 
