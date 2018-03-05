@@ -186,7 +186,7 @@ a {
 
 .container {
 	display: grid; /* 1 */
-    grid-gap: 5.0em; /* 2 */
+    grid-gap: 2.5em; /* 2 */
     margin: 1.5em auto; /* 2, 3 */
     max-width: 85em; /* 4 */
     padding: 0 1.5em; /* 2 */
