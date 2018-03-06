@@ -22,30 +22,37 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* -----------------------------------------------------------------------*/
+/* This is a start of the new CSS code */
 
 html * {
     font-family: "Open Sans";
@@ -68,7 +75,7 @@ header {
 }
 
 body {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Open Sans";
 	line-height: 1.5;
 	margin: 0 auto;
 	color: black;
@@ -80,15 +87,18 @@ body {
 
 a {
     color: #456BD9;
+	font-size: 16px;
 }
 
 .fa.fa-twitter, .fa.fa-github, .fa.fa-quora {
 	color: #456BD9;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .sm {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Open Sans";
+	font-family: "Open Sans";
+	font-size: 16px;
 }
 
 /*This is the start of the <div> and <span> based code
@@ -100,9 +110,8 @@ cases so take care if deleting the .title from here */
 .title {
 	color: white;
 	text-align: center;
-	font-size: 40px;
-	padding: 0 0 2em 0;
-	font-size: 3em;
+	font-size: 5em;
+	margin-bottom: 1.5em;
 }
 
 /* This deals with the main menu */
@@ -111,44 +120,29 @@ cases so take care if deleting the .title from here */
 	list-style-type: none;
 	padding: 0;
 	text-align: right;
-	margin-top: 50px;
+	margin-top: 3em;
 }
 
 .menu li {
 	display: inline;
-	padding: 30px;
+	padding: 2em;
 }
 
 .menu a {
 	text-decoration: none;
 	color: white;
-	font-size: 24px;
+	font-size: 2em;
 }
 
 .menu a:hover {
     color: #0099cc;
 }
 
-/* This deals with the textwriter */
-
-.textwriter {
-    margin-left: 10%;
-	font-size: 5.0em;
-	padding: none;
-    color: white;
-    text-decoration: none;
-}
-
-.waste {
-    color: #40474f;
-    font-size: 1px;
-}
-
 /* This deals with the main part of the front-page */
 
 /* Boilerplate */
 
-.prose * + * {
+.text * + * {
   margin-top: 1rem;
 }
 
@@ -156,6 +150,7 @@ cases so take care if deleting the .title from here */
   background: #dbe5ea;
   border-radius: 0.5em;
   overflow: hidden;
+  margin-left: 5em;
 }
 
 .box-header {
@@ -216,8 +211,8 @@ cases so take care if deleting the .title from here */
  */
 
 .sidebar {
-  display: inherit;
-  grid-gap: inherit;
+	display: inherit;
+	grid-gap: inherit;
 }
 
 /**
@@ -303,11 +298,15 @@ article img {
     max-height: 200px;
     padding-left: 10px;
     padding-right: 10px;
+	font-family: "Helvetica-Light";
+	font-size: 20px;
 }
 
 .container article p {
 	margin-top: 1em;
     line-height: 1.5;
+	font-family: "Helvetica-Light";
+	font-size: 20px;
 }
 
 .publication {
@@ -351,6 +350,7 @@ article .button a {
     color: black;
 	margin: 100px 150px;
     padding: 50px 25px;
+	font-family: "Helvetica-Light";
 }
 
 /* This is how we get back to top */
