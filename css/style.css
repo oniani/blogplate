@@ -13,31 +13,31 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 
 blockquote:before, blockquote:after,
@@ -47,8 +47,8 @@ q:before, q:after {
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* -----------------------------------------------------------------------*/
@@ -75,30 +75,30 @@ header {
 }
 
 body {
-	font-family: "Open Sans";
-	line-height: 1.5;
-	margin: 0 auto;
-	color: black;
-	background-color: white;
-	border-width: 10px;
-	border-top: none;
-	border-bottom: none;
+    font-family: "Open Sans";
+    line-height: 1.5;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+    border-width: 10px;
+    border-top: none;
+    border-bottom: none;
 }
 
 a {
     color: #456BD9;
-	font-size: 16px;
+    font-size: 16px;
 }
 
 .fa.fa-twitter, .fa.fa-github, .fa.fa-quora {
-	color: #456BD9;
-	font-size: 16px;
+    color: #456BD9;
+    font-size: 16px;
 }
 
 .sm {
-	font-family: "Open Sans";
-	font-family: "Open Sans";
-	font-size: 16px;
+    font-family: "Open Sans";
+    font-family: "Open Sans";
+    font-size: 16px;
 }
 
 /*This is the start of the <div> and <span> based code
@@ -108,30 +108,30 @@ a {
 cases so take care if deleting the .title from here */
 
 .title {
-	color: white;
-	text-align: center;
-	font-size: 5em;
-	margin-bottom: 1.5em;
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1.5em;
 }
 
 /* This deals with the main menu */
 
 .menu {
-	list-style-type: none;
-	padding: 0;
-	text-align: right;
-	margin-top: 3em;
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 3em;
 }
 
 .menu li {
-	display: inline;
-	padding: 2em;
+    display: inline;
+    padding: 2em;
 }
 
 .menu a {
-	text-decoration: none;
-	color: white;
-	font-size: 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
 }
 
 .menu a:hover {
@@ -143,40 +143,40 @@ cases so take care if deleting the .title from here */
 /* Boilerplate */
 
 .text * + * {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .box {
-  background: #dbe5ea;
-  border-radius: 0.5em;
-  overflow: hidden;
-  margin-left: 5em;
+    background: #dbe5ea;
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-left: 5em;
 }
 
 .box-header {
-  background: #0F1C3F;
-  color: #fff;
-  font-size: 1.25em;
-  line-height: 1;
-  padding: 1rem;
-  text-align: center;
+    background: #0F1C3F;
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 1;
+    padding: 1rem;
+    text-align: center;
 }
 
 .box-menu {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .box-menu > * + * {
-  border-top: 2px solid transparent;
+    border-top: 2px solid transparent;
 }
 
 .box-menu a {
-  background-color: rgba(255,255,255,0.5);
-  display: block;
-  line-height: 1;
-  padding: 1rem;
-  text-decoration: none;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    line-height: 1;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 /**
@@ -188,22 +188,22 @@ cases so take care if deleting the .title from here */
 
 .container {
 
-	/* Default values */
+    /* Default values */
 
-	display: grid; /* 1 */
-	grid-gap: 1.5em; /* 2 */
-	margin: 1.5em auto; /* 2, 3 */
-	max-width: 64em; /* 4 */
-	padding: 0 1.5em; /* 2 */
+    display: grid; /* 1 */
+    grid-gap: 1.5em; /* 2 */
+    margin: 1.5em auto; /* 2, 3 */
+    max-width: 64em; /* 4 */
+    padding: 0 1.5em; /* 2 */
 
-	/* OVERWROTE SOME OF THE CODE */
-	display: grid; /* 1 */
-	grid-gap: 2.5em; /* 2 */
-	margin: 1.5em auto; /* 2, 3 */
-	max-width: 85em; /* 4 */
-	padding: 0 1.5em; /* 2 */
-	position: relative;
-	bottom: 3em;
+    /* OVERWROTE SOME OF THE CODE */
+    display: grid; /* 1 */
+    grid-gap: 2.5em; /* 2 */
+    margin: 1.5em auto; /* 2, 3 */
+    max-width: 85em; /* 4 */
+    padding: 0 1.5em; /* 2 */
+    position: relative;
+    bottom: 3em;
 }
 
 /**
@@ -211,8 +211,8 @@ cases so take care if deleting the .title from here */
  */
 
 .sidebar {
-	display: inherit;
-	grid-gap: inherit;
+    display: inherit;
+    grid-gap: inherit;
 }
 
 /**
@@ -253,28 +253,28 @@ cases so take care if deleting the .title from here */
 /* This part deals with the 2-column grid */
 
 .grid-container {
-	display: grid;
-	grid-template-columns: auto auto;
-	max-width: 100%;
-	grid-gap: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 100%;
+    grid-gap: 25px;
 }
 
 .grid-item {
-	background-color: #dbe5ea;
-	border: 1em solid #0F1C3F;
-	text-align: center;
+    background-color: #dbe5ea;
+    border: 1em solid #0F1C3F;
+    text-align: center;
 }
 
 .intro-grid-item {
     text-align: left;
-	display: block;
+    display: block;
 
 }
 
 .intro-post-title {
-	text-align: center;
-	font-size: 2.5em;
-	color: black;
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
 }
 
 .posttitle {
@@ -292,21 +292,21 @@ article img {
 
 .grid-container article p {
     color: black;
-	margin: 10px;
+    margin: 10px;
     text-align: center;
     line-height: 1.5;
     max-height: 200px;
     padding-left: 10px;
     padding-right: 10px;
-	font-family: "Helvetica-Light";
-	font-size: 20px;
+    font-family: "Helvetica-Light";
+    font-size: 20px;
 }
 
 .container article p {
-	margin-top: 1em;
+    margin-top: 1em;
     line-height: 1.5;
-	font-family: "Helvetica-Light";
-	font-size: 20px;
+    font-family: "Helvetica-Light";
+    font-size: 20px;
 }
 
 .publication {
@@ -316,7 +316,7 @@ article img {
     color: white;
     margin: 20px;
     text-align: center;
-	text-transform: uppercase;
+    text-transform: uppercase;
     padding: 10px;
 }
 
@@ -348,9 +348,9 @@ article .button a {
     display: inline-block;
     background: white;
     color: black;
-	margin: 100px 150px;
+    margin: 100px 150px;
     padding: 50px 25px;
-	font-family: "Helvetica-Light";
+    font-family: "Helvetica-Light";
 }
 
 /* This is how we get back to top */
@@ -378,7 +378,7 @@ article .button a {
 /* This part is for the footer */
 
 footer {
-	background-color: #0F1C3F;
+    background-color: #0F1C3F;
     color: white;
     text-align: center;
     font-size: 16px;
