@@ -142,10 +142,6 @@ cases so take care if deleting the .title from here */
 
 /* Boilerplate */
 
-.text * + * {
-    margin-top: 1rem;
-}
-
 .box {
     background: #dbe5ea;
     border-radius: 0.5em;
