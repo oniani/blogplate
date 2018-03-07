@@ -90,15 +90,14 @@ a {
     font-size: 16px;
 }
 
-.fa.fa-twitter, .fa.fa-github, .fa.fa-quora {
-    color: #456BD9;
-    font-size: 16px;
-}
-
-.sm {
-    font-family: "Open Sans";
-    font-family: "Open Sans";
-    font-size: 16px;
+.fa.fa-twitter, .fa.fa-github, .fa.fa-medium {
+    position: relative;
+    bottom: 4em;
+    left: 22em;
+    color: white;
+    font-size: 3.125em;
+    margin: 0 0 0 0.5em;
+    text-decoration: none;
 }
 
 /*This is the start of the <div> and <span> based code
@@ -173,6 +172,15 @@ cases so take care if deleting the .title from here */
     line-height: 1;
     padding: 1rem;
     text-decoration: none;
+}
+
+.archive {
+    overflow: scroll;
+    max-height: 15.5em;
+}
+
+.archive > * + * {
+    border-top: 2px solid transparent;
 }
 
 /**
