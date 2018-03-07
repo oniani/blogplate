@@ -79,7 +79,7 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     color: black;
-    background-color: white;
+    background-color: #E2E8E4;
     border-width: 10px;
     border-top: none;
     border-bottom: none;
@@ -352,7 +352,7 @@ article .button a {
     display: inline-block;
     background: white;
     color: black;
-    margin: 100px 150px;
+    margin: 0em 10em 100px 10em;
     padding: 50px 25px;
     font-family: "Helvetica-Light";
 }
