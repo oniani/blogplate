@@ -379,6 +379,29 @@ article .button a {
     background: #7e98dd;
 }
 
+.front-back {
+    display: block;
+    position: absolute;
+    top: 73em;
+    left: 28em;
+    width: 3em;
+    height: 3em;
+    background: #0F1C3F;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    line-height: 3em;
+    text-align: center;
+}
+
+.front-back:hover {
+    background: #7e98dd;
+}
+
+.arrow {
+    font-size: 2em;
+}
+
 /* This part is for the footer */
 
 footer {
