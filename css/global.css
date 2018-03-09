@@ -341,9 +341,9 @@ article .button:hover {
 }
 
 article .button a {
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
 /* This part is for the article design */
