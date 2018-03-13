@@ -141,14 +141,14 @@ cases so take care if deleting the .title from here */
 
 /* Boilerplate */
 
-.box {
+.sidebar-item {
     background: #dbe5ea;
     border-radius: 0.5em;
     overflow: hidden;
     margin-left: 5em;
 }
 
-.box-header {
+.sidebar-item-header {
     background: #0F1C3F;
     color: #fff;
     font-size: 1.25em;
@@ -157,16 +157,16 @@ cases so take care if deleting the .title from here */
     text-align: center;
 }
 
-.box-menu {
+.sidebar-item-menu {
     list-style: none;
     padding: 0;
 }
 
-.box-menu > * + * {
+.sidebar-item-menu > * + * {
     border-top: 2px solid transparent;
 }
 
-.box-menu a {
+.sidebar-item-menu a {
     background-color: rgba(255,255,255,0.5);
     display: block;
     line-height: 1;
@@ -375,7 +375,7 @@ article .button a {
 .front-back {
     display: block;
     position: absolute;
-    top: 70.5em;
+    top: 72em;
     left: 28em;
     width: 3em;
     height: 3em;
