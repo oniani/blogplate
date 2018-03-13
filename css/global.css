@@ -372,7 +372,7 @@ article .button a {
 }
 
 .arrow {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .back-top-blog {
@@ -393,6 +393,29 @@ article .button a {
 
 .back-top-blog:hover {
     background: #7e98dd;
+}
+
+.back-top-bio {
+    display: block;
+    position: absolute;
+    top: 58em;
+    left: 45em;
+    width: 2.5em;
+    height: 2.5em;
+    background: #0F1C3F;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.back-top-bio:hover {
+    background: #7e98dd;
+}
+
+.arrow {
+    font-size: 3em;
 }
 
 /* This deals with the about page */
