@@ -262,7 +262,10 @@ cases so take care if deleting the .title from here */
 .intro-grid-item {
     text-align: left;
     display: block;
+}
 
+.intro-grid-item h1 {
+    font-weight: bold;
 }
 
 .intro-post-title {
@@ -390,6 +393,24 @@ article .button a {
 
 .arrow {
     font-size: 2em;
+}
+
+/* This deals with the about page */
+
+.about {
+    margin: -3em 5em 3em 5em;
+}
+
+.about h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.about h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 1em 0;
 }
 
 /* This part is for the footer */
