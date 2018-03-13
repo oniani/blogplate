@@ -190,7 +190,7 @@ cases so take care if deleting the .title from here */
  * 4. Set maximum width.
  */
 
-.container {
+.grid {
     display: grid; /* 1 */
     grid-gap: 2.5em; /* 2 */
     margin: 1.5em auto; /* 2, 3 */
@@ -229,7 +229,7 @@ cases so take care if deleting the .title from here */
    * Establish one primary (⅔) column and one secondary (⅓) column.
    */
 
-  .container {
+  .grid {
     grid-template-columns: 2fr 1fr;
   }
 
@@ -250,7 +250,7 @@ cases so take care if deleting the .title from here */
     display: grid;
     grid-template-columns: auto auto;
     max-width: 100%;
-    grid-gap: 25px;
+    grid-gap: 1em;
 }
 
 .grid-item {
@@ -299,7 +299,7 @@ article img {
     font-size: 20px;
 }
 
-.container article p {
+.grid article p {
     margin-top: 1em;
     line-height: 1.5;
     font-family: "Helvetica-Light";
