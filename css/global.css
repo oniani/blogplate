@@ -395,10 +395,38 @@ article .button a {
     background: #7e98dd;
 }
 
+/* This deals with the about page */
+
+.bio {
+    margin: -3em 5em 3em 5em;
+}
+
+.bio h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.bio h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    background-color: #0F1C3F;
+    color: white;
+    padding: 0.3em;
+}
+
+.bio h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0 1em 3em;
+}
+
 .back-top-bio {
     display: block;
     position: absolute;
-    top: 58em;
+    top: 100em;
     left: 45em;
     width: 2.5em;
     height: 2.5em;
@@ -416,24 +444,6 @@ article .button a {
 
 .arrow {
     font-size: 3em;
-}
-
-/* This deals with the about page */
-
-.about {
-    margin: -3em 5em 3em 5em;
-}
-
-.about h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 1em 0;
-}
-
-.about h2 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin: 1em 0;
 }
 
 /* This part is for the footer */
