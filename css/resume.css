@@ -1,0 +1,320 @@
+/* Mayerweb CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -----------------------------------------------------------------------*/
+/* This is a start of the new CSS code */
+
+html * {
+    font-family: "Open Sans";
+}
+
+
+header {
+    line-height: 1.5;
+    background-color: #0F1C3F;
+    color: #5b5b5b;
+    padding: 3.125em;
+    margin-bottom: 100px;
+}
+
+/* Boilerplate */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans";
+    line-height: 1.5;
+    color: black;
+    background-color: #0F1C3F;
+}
+
+a {
+    color: #456BD9;
+    font-size: 16px;
+}
+
+span i {
+    font-style: italic;
+}
+
+.fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-medium {
+    position: relative;
+    left: 20em;
+    top: 1em;
+    color: white;
+    font-size: 3.125em;
+    margin: 0 0 0 0.5em;
+    text-decoration: none;
+}
+
+.fa.fa-graduation-cap, .fa.fa-briefcase {
+    font-size: 2em;
+}
+
+/*This is the start of the <div> and <span> based code
+----------------------------------------------------------------------------*/
+
+/* This is an important part of the code. Attribute "title is also used in other
+cases so take care if deleting the .title from here */
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.menu li a {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    font-size: 2em;
+    color: white;
+}
+
+/* This deals with the resumegraphy page */
+
+.resume {
+    margin: -5em 0 3em 7em;
+}
+
+.edu, .work {
+    float: left;
+    width: 50%;
+}
+
+.resume::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.text {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resume h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    background-color: #0F1C3F;
+    color: white;
+    padding: 0.3em;
+}
+
+.resume h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0 1em 3em;
+}
+
+.resume:hover > div {
+    transition-duration: 0.3s;
+}
+
+.resume:hover > div:hover h3 {
+    letter-spacing: 1.6px;
+}
+
+.resume:hover > div:hover h3 i {
+    transform: scale(1.5);
+}
+
+/* .resume:hover > div:not(:hover) {
+    opacity: 0.5;
+} */
+
+.resume h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+    color: white;
+}
+
+.resume h3 i {
+    color: #fcfcfc;
+    background: #0F1C3F;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+}
+
+.resume .work,  .resume .edu {
+    margin: 3em 0;
+}
+
+.resume .work small,  .resume .edu small {
+    display: block;
+    opacity: 0.8;
+}
+
+.resume .work ul li,  .resume .edu ul li {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.resume .work ul li:hover::before,  .resume .edu ul li:hover::before {
+    animation: circle 1.2s infinite;
+}
+
+.resume .work ul li:hover span,  .resume .edu ul li:hover span {
+    background-color: #FF8C00;
+    padding: 0.5em;
+    font-size: 1.15em;
+}
+
+.resume .work ul li:hover small,  .resume .edu ul li:hover small {
+    background-color: #FF8C00;
+    padding: 0.5em;
+    font-size: 1.15em;
+}
+
+@keyframes circle {
+from {
+    box-shadow: 0 0 0 0px #3d405b;
+}
+to {
+    box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
+}
+}
+
+.resume .work ul li:first-of-type::before,  .resume .edu ul li:first-of-type::before {
+    width: 10px;
+    height: 10px;
+    left: -2px;
+}
+
+.resume .work ul li:last-of-type,  .resume .edu ul li:last-of-type {
+    padding-bottom: 3px;
+}
+
+.resume .work ul li:last-of-type::after,  .resume .edu ul li:last-of-type::after {
+    border-radius: 1.5px;
+}
+
+.resume .work ul li::before,  .resume .work ul li::after,  .resume .edu ul li::before,  .resume .edu ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.resume .work ul li::before,  .resume .edu ul li::before {
+    width: 7px;
+    height: 7px;
+    border: 3px solid white;
+    background: white;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.resume .work ul li::after,  .resume .edu ul li::after {
+    width: 3px;
+    height: 100%;
+    background: white;
+    left: 5px;
+    top: 0;
+}
+
+.resume .work ul li span,  .resume .edu ul li span {
+    transition-duration: 0.3s;
+}
+
+.back-top-resume {
+    display: block;
+    position: absolute;
+    top: 71em;
+    left: 45em;
+    width: 2.5em;
+    height: 2.5em;
+    background: #0F1C3F;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.back-top-resume:hover {
+    background: #0F1C3F;
+}
+
+.arrow {
+    font-size: 3em;
+}
+
+/* This part is for the footer */
+
+footer {
+    background-color: #0F1C3F;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+
+/* This is the end of the style.css file */
