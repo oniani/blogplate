@@ -172,6 +172,7 @@ cases so take care if deleting the .title from here */
     line-height: 1;
     padding: 1rem;
     text-decoration: none;
+    line-height: 1.5;
 }
 
 .archive {
