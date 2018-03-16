@@ -314,7 +314,7 @@ transition: top .3s ease,opacity .3s ease;
 
 
 form .floating-label-form-group {
-background: #FF8C00;
+background: white;
 border: 2px solid white;
 border-radius: 6px;
 }
