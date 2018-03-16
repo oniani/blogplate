@@ -403,7 +403,6 @@ footer {
     text-align: center;
     font-size: 1em;
     padding: 0.9375em;
-    position: fixed;
     height: 3.125em;
     bottom: 0;
     left: 0;
@@ -412,4 +411,3 @@ footer {
 }
 
 /* This is the end of the style.css file */
-
