@@ -234,7 +234,7 @@ cases so take care if deleting the .title from here */
 
   /**
    * 1. Automatically create sidebar rows that are as short as their content will allow.
-   * 2. Make this element span two rows, allowing prose elements to flow to its left.
+   * 2. Make this element span two rows, allowing text elements to flow to its left.
    */
 
   .sidebar {
