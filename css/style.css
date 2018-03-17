@@ -174,7 +174,7 @@ cases so take care if deleting the .title from here */
 
 .grid {
     display: grid;
-    grid-gap: 2.5em;
+    grid-gap: 1.5em;
     margin: 1.5em auto;
     max-width: 85em;
     padding: 0 1.5em;
@@ -193,10 +193,28 @@ cases so take care if deleting the .title from here */
  * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
  */
 
+ @media (min-width: 0em) and (max-width: 33.999em) {
+
+    .sidebar {
+    grid-template-columns: 1fr;
+
+  }
+
+  .sidebar-item {
+    margin-left: 0;
+
+}
+}
+
 @media (min-width: 34em) and (max-width: 49.9375em) {
-  .sidebar {
+
+    .sidebar {
     grid-template-columns: 1fr 1fr;
   }
+
+  .sidebar-item {
+    margin-left: 0;
+}
 }
 
 /**
@@ -214,14 +232,14 @@ cases so take care if deleting the .title from here */
   }
 
   /**
-   * 1. Automatically create sidebar rows that are as short as their content will allow.
-   * 2. Make this element span two rows, allowing text elements to flow to its left.
+   * Automatically create sidebar rows that are as short as their content will allow.
+   * Make this element span two rows, allowing text elements to flow to its left.
    */
 
   .sidebar {
-    grid-auto-rows: min-content; /* 1 */
-    grid-row: span 2; /* 2 */
-  }
+    grid-auto-rows: min-content;
+    grid-row: span 2;
+}
 }
 
 /* This part deals with the 2-column grid */
