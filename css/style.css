@@ -63,7 +63,6 @@ header {
     background-color: #0F1C3F;
     color: white;
     padding: 3.125em;
-    margin-bottom: 6.25em;
 }
 
 /* Boilerplate */
@@ -91,7 +90,7 @@ a {
 
 .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-medium {
     color: white;
-    font-size: 3.125em;
+    font-size: 3.5vw;
     margin: 0 -20em 0em 20.5em;
     text-decoration: none;
     position: relative;
@@ -173,30 +172,12 @@ cases so take care if deleting the .title from here */
     line-height: 1.5;
 }
 
-.archive {
-    overflow: scroll;
-    max-height: 15.5em;
-}
-
-.archive > * + * {
-    border-top: 2px solid transparent;
-}
-
-/**
- * 1. Use grid.
- * 2. Gutter space.
- * 3. Center at large sizes.
- * 4. Set maximum width.
- */
-
 .grid {
-    display: grid; /* 1 */
-    grid-gap: 2.5em; /* 2 */
-    margin: 1.5em auto; /* 2, 3 */
-    max-width: 85em; /* 4 */
-    padding: 0 1.5em; /* 2 */
-    position: relative;
-    bottom: 3em;
+    display: grid;
+    grid-gap: 2.5em;
+    margin: 1.5em auto;
+    max-width: 85em;
+    padding: 0 1.5em;
 }
 
 /**
@@ -245,57 +226,23 @@ cases so take care if deleting the .title from here */
 
 /* This part deals with the 2-column grid */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    max-width: 100%;
-    grid-gap: 1em;
-}
-
 .grid-item {
-    background-color: #dbe5ea;
-    border: 1em solid #0F1C3F;
-    text-align: center;
-}
-
-.intro-grid-item {
     text-align: left;
     display: block;
 }
 
-.intro-grid-item h1 {
+.grid-item h1 {
     font-weight: bold;
 }
 
-.intro-post-title {
+.post-title {
     text-align: center;
     font-size: 2.5em;
     color: black;
 }
 
-.posttitle {
-    display: block;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #0F1C3F;
-    color: white;
-}
-
 article img {
     max-width: 100%;
-}
-
-.grid-container article p {
-    color: black;
-    margin: 10px;
-    text-align: center;
-    line-height: 1.5;
-    max-height: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: "Helvetica-Light";
-    font-size: 20px;
 }
 
 .grid article p {
@@ -305,94 +252,6 @@ article img {
     font-size: 20px;
 }
 
-.publication {
-    display: block;
-    background-color: #0F1C3F;
-    font-size: 16px;
-    color: white;
-    margin: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0.3em;
-}
-
-article .button {
-    border-radius: 28px;
-    padding: 5px;
-    margin: 20px;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: white;
-    background-color: #0F1C3F;
-}
-
-article .button:hover {
-    background: #7e98dd;
-}
-
-article .button a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-/* This part is for the article design */
-
-.inside_articles {
-    display: inline-block;
-    background: white;
-    color: black;
-    margin: 0em 10em 100px 10em;
-    padding: 50px 25px;
-    font-family: "Helvetica-Light";
-}
-
-/* This is how we get back to top */
-
-.back-top-front {
-    display: block;
-    position: absolute;
-    top: 72em;
-    left: 28em;
-    width: 3em;
-    height: 3em;
-    background: #0F1C3F;
-    text-decoration: none;
-    color: white;
-    border-radius: 50%;
-    line-height: 3em;
-    text-align: center;
-}
-
-.back-top-front:hover {
-    background: #7e98dd;
-}
-
-.arrow {
-    font-size: 3em;
-}
-
-.back-top-blog {
-    position: fixed;
-    bottom: 4.0625em;
-    right: 28.5em;
-    height: 12em;
-    width: 2em;
-    z-index: 99;
-    background-color: #0F1C3F;
-    color: white;
-    border-radius: 20em;
-    padding: 0.625em;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-.back-top-blog:hover {
-    background: #7e98dd;
-}
-
 /* This part is for the footer */
 
 footer {
@@ -400,9 +259,8 @@ footer {
     color: white;
     text-align: center;
     font-size: 1em;
-    padding: 0.9375em;
-    height: 3.125em;
-    margin-bottom: 0;
+    padding: 0.8em;
+    text-transform: uppercase;
 }
 
 /* This is the end of the style.css file */
