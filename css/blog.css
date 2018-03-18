@@ -54,10 +54,6 @@ table {
 /* -----------------------------------------------------------------------*/
 /* This is a start of the new CSS code */
 
-html * {
-    font-family: "Open Sans";
-}
-
 header {
     line-height: 1.5;
     background-color: #0F1C3F;

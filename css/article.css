@@ -55,7 +55,6 @@ table {
 /* This is a start of the new CSS code */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
     margin: 1em auto;
     text-align: center;
     font-weight: bold;
@@ -104,6 +103,10 @@ ol ol, ul ol {
    margin-left: 15px;
 }
 
+nav {
+    font-size: 1.5em;
+}
+
 header h6 {
 	margin-top: 1.5em;
 	margin-bottom: 1em;
@@ -117,10 +120,6 @@ header h6, header h1 {
 
 hr {
 	margin: 2.5em auto;
-}
-
-html * {
-    font-family: "Open Sans";
 }
 
 header {
@@ -176,6 +175,7 @@ header a {
 
 article {
     margin: auto 16em;
+    font-family: "Helvetica-Light";
 }
 
 article img {
