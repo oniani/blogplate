@@ -347,9 +347,8 @@ footer {
     color: white;
     text-align: center;
     font-size: 1em;
-    padding: 0.9375em;
-    height: 3.125em;
-    margin-bottom: 0;
+    padding: 1.2em;
+    text-transform: uppercase;
 }
 
 /* This is the end of the style.css file */

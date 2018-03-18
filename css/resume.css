@@ -118,14 +118,6 @@ cases so take care if deleting the .title from here */
     font-weight: bold;
 }
 
-.menu li a {
-    position: absolute;
-    top: 1.5em;
-    left: 1.5em;
-    font-size: 2em;
-    color: white;
-}
-
 /* This deals with the resumegraphy page */
 
 .resume {
@@ -313,8 +305,9 @@ footer {
     background-color: #0F1C3F;
     color: white;
     text-align: center;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 1em;
+    padding: 1.2em;
+    text-transform: uppercase;
 }
 
 /* This is the end of the style.css file */
