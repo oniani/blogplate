@@ -1,32 +1,96 @@
-<!DOCTYPE html>
-	<html lang='en'>
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Blogplate</title>
-			<link href="css/contact.css" rel="stylesheet">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-		</head>
 
-		<body>
-
-		<h3>Contact Form</h3>
-
-			<div class="container">
-				<form action="/action_page.php">
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-					<label for="subject">Subject</label>
-					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-					<input class="submit" type="submit" value="Submit">
-				</form>
-			</div>
-
-		</body>
-</html>
+<!DOCTYPE html><html lang='en' class=''>
+	<head><script src='//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js'></script><script src='//static.codepen.io/assets/editor/live/css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/fiorellamejiasc/pen/PjPbrb?depth=everything&order=popularity&page=26&q=contact+form&show_forks=false" />
+	
+	
+	<style class="cp-pen-styles">* {
+	  box-sizing: border-box;
+	}
+	
+	body {
+	  margin: 0;
+	  font-family: monospace;
+	  background: tomato;
+	  color: white;
+	}
+	.formulario {
+	  width: 500px;
+	  margin: auto;
+	  max-width: 100%;
+	  margin-top: 30px;
+	  padding: 20px;
+	  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+	  position: relative;
+	}
+	.formulario_titulo {
+	  text-align: center;
+	  margin-top: 0;
+	  color: white;
+	}
+	.formulario_input, .formulario_label, .formulario_submit {
+	  display: block;
+	  width: 100%;
+	  font-size: 1.3em;
+	  color: white;
+	  font-family: monospace;
+	}
+	.formulario_input {
+	  padding: 20px;
+	  border: 1px solid rgba(0,0,0,0.3);
+	  margin-bottom: 40px;
+	  background: rgba(0,0,0,0.1);
+	}
+	.formulario_label {
+	  padding-left: 15px;
+	  position: absolute;
+	  margin-top: -85px;
+	  z-index: -20px;
+	  transition: all 0.3s;
+	  color: white;
+	  animation: shake 0.3s;
+	}
+	.formulario_submit {
+	  background: transparent;
+	  color: white;
+	  padding: 10px 20px;
+	  cursor: pointer;
+	  border-radius: 20px;
+	}
+	.formulario_input:focus + .formulario_label {
+	  margin-top: -135px;
+	}
+	.fijar {
+	  margin-top: -135px;
+	}</style></head><body>
+	<head>
+	<title>Animated contact form</title>
+	</head>
+	<body>
+	  <form action="" class="formulario">
+		<h1 class="formulario_titulo">Contact us</h1>
+		<input type="text" class="formulario_input">
+		<label for ="" class="formulario_label">Name</label>
+		<input type="text" class="formulario_input">
+		<label for ="" class="formulario_label">E-mail</label>
+		<input type="text" class="formulario_input">
+		<label for ="" class="formulario_label">Comments here</label>
+		<input type="submit" class="formulario_submit">
+		 </form>
+	  
+	</body>
+	<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+	<script >var input = document.getElementsByClassName('formulario_input');
+	for (var i=0; i < input.length; i++) {if (window.CP.shouldStopExecution(1)){break;}
+	  input [i].addEventListener('keyup',function() {
+	  if(this.value.length>=1) {
+		this.nextElementSibling.classList.add('fijar');
+	  } else {
+		this.nextElementSibling.classList.remove('fijar');
+	  }  
+	  });
+	}
+	window.CP.exitedLoop(1);
+	
+	//# sourceURL=pen.js
+	</script>
+	</body></html>
