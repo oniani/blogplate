@@ -63,7 +63,6 @@ header {
     background-color: #0F1C3F;
     color: white;
     padding: 3.125em;
-    margin-bottom: 6.25em;
 }
 
 /* Boilerplate */
@@ -91,7 +90,7 @@ a {
 
 .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-medium {
     color: white;
-    font-size: 3.125em;
+    font-size: 3.5vw;
     margin: 0 -20em 0em 20.5em;
     text-decoration: none;
     position: relative;
@@ -140,7 +139,6 @@ cases so take care if deleting the .title from here */
 /* Boilerplate */
 
 .sidebar-item {
-    background: #dbe5ea;
     border-radius: 0.5em;
     overflow: hidden;
     margin-left: 5em;
@@ -158,6 +156,7 @@ cases so take care if deleting the .title from here */
 .sidebar-item-menu {
     list-style: none;
     padding: 0;
+    background-color: #dbe5ea;
 }
 
 .sidebar-item-menu > * + * {
@@ -173,6 +172,14 @@ cases so take care if deleting the .title from here */
     line-height: 1.5;
 }
 
+.grid {
+    display: grid;
+    grid-gap: 1.5em;
+    margin: 1.5em auto;
+    max-width: 85em;
+    padding: 0 1.5em;
+}
+
 .archive {
     overflow: scroll;
     max-height: 15.5em;
@@ -182,21 +189,12 @@ cases so take care if deleting the .title from here */
     border-top: 2px solid transparent;
 }
 
-/**
- * 1. Use grid.
- * 2. Gutter space.
- * 3. Center at large sizes.
- * 4. Set maximum width.
- */
-
-.grid {
-    display: grid; /* 1 */
-    grid-gap: 2.5em; /* 2 */
-    margin: 1.5em auto; /* 2, 3 */
-    max-width: 85em; /* 4 */
-    padding: 0 1.5em; /* 2 */
-    position: relative;
-    bottom: 3em;
+ .grid {
+    display: grid;
+    grid-gap: 1.5em;
+    margin: 1.5em auto;
+    max-width: 85em;
+    padding: 0 1.5em;
 }
 
 /**
@@ -212,10 +210,29 @@ cases so take care if deleting the .title from here */
  * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
  */
 
+
+ @media (min-width: 0em) and (max-width: 33.999em) {
+
+    .sidebar {
+    grid-template-columns: 1fr;
+
+  }
+
+  .sidebar-item {
+    margin-left: 0;
+
+}
+}
+
 @media (min-width: 34em) and (max-width: 49.9375em) {
-  .sidebar {
+
+    .sidebar {
     grid-template-columns: 1fr 1fr;
   }
+
+  .sidebar-item {
+    margin-left: 0;
+}
 }
 
 /**
@@ -233,14 +250,14 @@ cases so take care if deleting the .title from here */
   }
 
   /**
-   * 1. Automatically create sidebar rows that are as short as their content will allow.
-   * 2. Make this element span two rows, allowing text elements to flow to its left.
+   * Automatically create sidebar rows that are as short as their content will allow.
+   * Make this element span two rows, allowing text elements to flow to its left.
    */
 
   .sidebar {
-    grid-auto-rows: min-content; /* 1 */
-    grid-row: span 2; /* 2 */
-  }
+    grid-auto-rows: min-content;
+    grid-row: span 2;
+}
 }
 
 /* This part deals with the 2-column grid */
@@ -256,21 +273,6 @@ cases so take care if deleting the .title from here */
     background-color: #dbe5ea;
     border: 1em solid #0F1C3F;
     text-align: center;
-}
-
-.intro-grid-item {
-    text-align: left;
-    display: block;
-}
-
-.intro-grid-item h1 {
-    font-weight: bold;
-}
-
-.intro-post-title {
-    text-align: center;
-    font-size: 2.5em;
-    color: black;
 }
 
 .posttitle {
@@ -336,61 +338,6 @@ article .button a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-}
-
-/* This part is for the article design */
-
-.inside_articles {
-    display: inline-block;
-    background: white;
-    color: black;
-    margin: 0em 10em 100px 10em;
-    padding: 50px 25px;
-    font-family: "Helvetica-Light";
-}
-
-/* This is how we get back to top */
-
-.back-top-front {
-    display: block;
-    position: absolute;
-    top: 72em;
-    left: 28em;
-    width: 3em;
-    height: 3em;
-    background: #0F1C3F;
-    text-decoration: none;
-    color: white;
-    border-radius: 50%;
-    line-height: 3em;
-    text-align: center;
-}
-
-.back-top-front:hover {
-    background: #7e98dd;
-}
-
-.arrow {
-    font-size: 3em;
-}
-
-.back-top-blog {
-    position: fixed;
-    bottom: 4.0625em;
-    right: 28.5em;
-    height: 12em;
-    width: 2em;
-    z-index: 99;
-    background-color: #0F1C3F;
-    color: white;
-    border-radius: 20em;
-    padding: 0.625em;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-.back-top-blog:hover {
-    background: #7e98dd;
 }
 
 /* This part is for the footer */
