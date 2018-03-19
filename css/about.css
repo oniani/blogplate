@@ -54,15 +54,73 @@ table {
 /* -----------------------------------------------------------------------*/
 /* This is a start of the new CSS code */
 
-html * {
-    font-family: "Open Sans";
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.2em;
+}
+
+ul {
+   list-style-type: disc;
+   list-style-position: inside;
+}
+ol {
+   list-style-type: decimal;
+   list-style-position: inside;
+}
+ul ul, ol ul {
+   list-style-type: circle;
+   list-style-position: inside;
+   margin-left: 15px;
+}
+ol ol, ul ol {
+   list-style-type: lower-latin;
+   list-style-position: inside;
+   margin-left: 15px;
+}
+
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav {
+    font-size: 1.1em;
+    margin-left: 3em;
 }
 
 header {
     line-height: 1.5;
     background-color: #0F1C3F;
     color: white;
-    padding: 3.125em;
+    padding: 1em;
 }
 
 /* Boilerplate */
@@ -72,6 +130,18 @@ header {
     margin: 0;
 }
 
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
 body {
     font-family: "Open Sans";
     font-family: Arial, Helvetica, sans-serif;
@@ -79,56 +149,71 @@ body {
     background-color: #E2E8E4;
 }
 
-
-/*This is the start of the <div> and <span> based code
-----------------------------------------------------------------------------*/
-
-/* This is an important part of the code. Attribute "title is also used in other
-cases so take care if deleting the .title from here */
-
-.title {
-    color: white;
-    text-align: center;
-    font-size: 5em;
-    margin-bottom: 1.5em;
-}
-
-input[type=text], textarea {
+input[type=text], input[type=submit], 
+input[type=email], input[type=number], 
+input[type=url], textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.75em;
+    border: 0.0625em solid #ccc;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.375em;
+    margin-bottom: 1em;
     resize: vertical;
 }
 
 input[type=submit] {
     background-color: white;
-    color: black;
-    padding: 1em 36em;
+    color: #0F1C3F;
+    padding: 0.75em 1.25em;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #0F1C3F;
-    color: white;
+    background-color: #ccc;
 }
 
-.contact-form {
-    margin: 7em 0 0 18em;
-    border-radius: 5px;
+.box {
+    background-color: #f2f2f2;
     background-color: #0F1C3F;
-    padding: 20px;
+    margin: 2em 0em;
     color: white;
-    max-width: 60%;
+    padding: 3em;
 }
 
-.contact-form h3 {
+.about {
+    background-color: #f2f2f2;
+    padding: 1em;
+    background-color: #0F1C3F;
+    margin: 2em 5em;
+    color: white;
+    font-family: 'Helvetica-Light';
+    border: 1em solid white;
+}
+
+.bio {
+    border: 0.0625 solid white;
+}
+
+.fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
+    color: white;
+    font-size: 2vw;
+    padding: 0 0.25em;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.social {
     text-align: center;
-    font-size: 2em;
-    font-weight: bold;
 }
+
+footer {
+    background-color: #0F1C3F;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 1.2em;
+    text-transform: uppercase;
+}
+
+/* This is the end of the about.css file */
