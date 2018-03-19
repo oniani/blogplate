@@ -198,6 +198,10 @@ figcaption {
 	color: #1F305E;
 }
 
+.social a:visited {
+    color: hotpink;
+}
+
 .top {
     margin: 2em 2em 1em 27em;
     background-color: #0F1C3F;
