@@ -54,6 +54,33 @@ table {
 /* -----------------------------------------------------------------------*/
 /* This is a start of the new CSS code */
 
+ul {
+   list-style-type: disc;
+   list-style-position: inside;
+}
+ol {
+   list-style-type: decimal;
+   list-style-position: inside;
+}
+ul ul, ol ul {
+   list-style-type: circle;
+   list-style-position: inside;
+   margin-left: 15px;
+}
+ol ol, ul ol {
+   list-style-type: lower-latin;
+   list-style-position: inside;
+   margin-left: 15px;
+}
+
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 header {
     line-height: 1.5;
     background-color: #0F1C3F;
@@ -103,7 +130,7 @@ cases so take care if deleting the .title from here */
     color: white;
     text-align: center;
     font-size: 5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 /* This deals with the main menu */
@@ -166,14 +193,6 @@ cases so take care if deleting the .title from here */
     padding: 1rem;
     text-decoration: none;
     line-height: 1.5;
-}
-
-.grid {
-    display: grid;
-    grid-gap: 1.5em;
-    margin: 1.5em auto;
-    max-width: 85em;
-    padding: 0 1.5em;
 }
 
 .archive {
