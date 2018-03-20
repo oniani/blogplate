@@ -197,7 +197,7 @@ cases so take care if deleting the .title from here */
 
 .archive {
     overflow: scroll;
-    max-height: 15.5em;
+    max-height: 14.45em;
 }
 
 .archive > * + * {
