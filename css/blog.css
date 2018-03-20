@@ -309,7 +309,7 @@ article img {
 }
 
 .grid article p {
-    margin-top: 1em;
+    margin: 1em;
     line-height: 1.5;
     font-family: "Helvetica-Light";
     font-size: 1em;
