@@ -217,8 +217,11 @@ cases so take care if deleting the .title from here */
  * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
  */
 
-
  @media (min-width: 0em) and (max-width: 33.999em) {
+
+    .title {
+        font-size: 3em;
+    }
 
     .sidebar {
     grid-template-columns: 1fr;
@@ -229,9 +232,33 @@ cases so take care if deleting the .title from here */
     margin-left: 0;
 
 }
+
+  .menu li {
+    display: inline;
+    padding: 1.7em;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+
+  .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 -2.8em 0em 3.3em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.3em;
+}
 }
 
 @media (min-width: 34em) and (max-width: 49.9375em) {
+    
+    .title {
+        font-size: 4em;
+    }
 
     .sidebar {
     grid-template-columns: 1fr 1fr;
@@ -239,6 +266,25 @@ cases so take care if deleting the .title from here */
 
   .sidebar-item {
     margin-left: 0;
+}
+  .menu li {
+    display: inline;
+    padding: 2.2em;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
+    color: white;
+    font-size: 2em;
+    margin: 0 -4em 0em 4.5em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.3em;
 }
 }
 

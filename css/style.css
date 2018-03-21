@@ -241,7 +241,7 @@ cases so take care if deleting the .title from here */
 }
   .menu li {
     display: inline;
-    padding: 2em;
+    padding: 2.2em;
   }
 
   .menu a {
@@ -253,7 +253,7 @@ cases so take care if deleting the .title from here */
   .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
     color: white;
     font-size: 2em;
-    margin: 0 -7.5em 0em 8em;
+    margin: 0 -4em 0em 4.5em;
     text-decoration: none;
     position: relative;
     bottom: 0.3em;
