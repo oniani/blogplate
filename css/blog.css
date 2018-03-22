@@ -213,111 +213,12 @@ cases so take care if deleting the .title from here */
     grid-gap: inherit;
 }
 
-/**
- * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
- */
-
- @media (min-width: 0em) and (max-width: 33.999em) {
-
-    .title {
-        font-size: 3em;
-    }
-
-    .sidebar {
-    grid-template-columns: 1fr;
-
-  }
-
-  .sidebar-item {
-    margin-left: 0;
-
-}
-
-  .menu li {
-    display: inline;
-    padding: 1.7em;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-  }
-
-  .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
-    color: white;
-    font-size: 1.5em;
-    margin: 0 -2.8em 0em 3.3em;
-    text-decoration: none;
-    position: relative;
-    bottom: 0.3em;
-}
-}
-
-@media (min-width: 34em) and (max-width: 49.9375em) {
-    
-    .title {
-        font-size: 4em;
-    }
-
-    .sidebar {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .sidebar-item {
-    margin-left: 0;
-}
-  .menu li {
-    display: inline;
-    padding: 2.2em;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-  }
-
-  .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
-    color: white;
-    font-size: 2em;
-    margin: 0 -4em 0em 4.5em;
-    text-decoration: none;
-    position: relative;
-    bottom: 0.3em;
-}
-}
-
-/**
- * At even wider sizes…
- */
-
-@media (min-width: 50em) {
-
-  /**
-   * Establish one primary (⅔) column and one secondary (⅓) column.
-   */
-
-  .grid {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  /**
-   * Automatically create sidebar rows that are as short as their content will allow.
-   * Make this element span two rows, allowing text elements to flow to its left.
-   */
-
-  .sidebar {
-    grid-auto-rows: min-content;
-    grid-row: span 2;
-}
-}
 
 /* This part deals with the 2-column grid */
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     max-width: 100%;
     grid-gap: 1em;
 }
@@ -393,6 +294,78 @@ article .button a {
     color: white;
     font-size: 18px;
 }
+/**
+ * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
+ */
+
+ @media only screen and (max-width: 37.5em) {
+
+.title {
+    font-size: 3em;
+}
+
+.sidebar {
+    grid-template-columns: 1fr;
+}
+
+.sidebar-item {
+    margin-left: 0;
+
+}
+
+.menu li {
+    display: inline;
+    padding: 1.7em;
+}
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+
+  .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 -2.8em 0em 3.3em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.3em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    grid-gap: 1em;
+}
+}
+
+/**
+ * At even wider sizes…
+ */
+
+ @media only screen and (min-width: 37.5em) {
+
+  /**
+   * Establish one primary (⅔) column and one secondary (⅓) column.
+   */
+
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /**
+   * Automatically create sidebar rows that are as short as their content will allow.
+   * Make this element span two rows, allowing text elements to flow to its left.
+   */
+
+  .sidebar {
+    grid-auto-rows: min-content;
+    grid-row: span 2;
+}
+}
+
 
 /* This part is for the footer */
 
