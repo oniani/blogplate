@@ -201,25 +201,6 @@ p a:visited {
     color: hotpink;
 }
 
-.top {
-    margin: 2em 2em 1em 27em;
-    background-color: #0F1C3F;
-    opacity: 0.5;
-    color: white;
-    display: block;
-    width: 2em;
-    height: 2em;
-    border-radius: 2em;
-    font-size: 1.6em;
-    text-decoration: none;
-    text-align: center;
-}
-
-.top:hover {
-    background-color: #0F1C3F;
-    opacity: 1;
-}
-
 blockquote{
 	display: block;
     margin-top: 1.5em;
