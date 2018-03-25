@@ -1,4 +1,3 @@
 # Blog Template
-This is an "early" template for my blog. Currently, it is in the development stage. I am going to finish it up by the end of March. It is being built using "CSS Grid" method.
-
-While in the development phase, you can see it [here](https://davidoniani.github.io/Blogplate/).
+This is an absolutely costomizable multipurpose web template specially crafted for the personal blog. It is built using HTML5 and CSS3. The template utilizes one of the most versatile CSS Grid layout and is fully responsive.
+# You can see it [here](https://davidoniani.github.io/Blogplate/).
