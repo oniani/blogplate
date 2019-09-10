@@ -1,115 +1,201 @@
 /* Mayerweb CSS reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* -----------------------------------------------------------------------*/
 /* This is a start of the new CSS code */
 
 ul {
-   list-style-type: disc;
-   list-style-position: inside;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 ol {
-   list-style-type: decimal;
-   list-style-position: inside;
+  list-style-type: decimal;
+  list-style-position: inside;
 }
-ul ul, ol ul {
-   list-style-type: circle;
-   list-style-position: inside;
-   margin-left: 15px;
+ul ul,
+ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 15px;
 }
-ol ol, ul ol {
-   list-style-type: lower-latin;
-   list-style-position: inside;
-   margin-left: 15px;
+ol ol,
+ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 15px;
 }
 
 header {
-    line-height: 1.5;
-    background-color: #0F1C3F;
-    color: white;
-    padding: 3.125em;
+  line-height: 1.5;
+  background-color: #0f1c3f;
+  color: white;
+  padding: 3.125em;
 }
 
 /* Boilerplate */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    font-family: "Open Sans";
-    line-height: 1.5;
-    margin: 0 auto;
-    color: black;
-    background-color: #E2E8E4;
-    border-width: 10px;
-    border-top: none;
-    border-bottom: none;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  margin: 0 auto;
+  color: black;
+  background-color: #e2e8e4;
+  border-width: 10px;
+  border-top: none;
+  border-bottom: none;
 }
 
 a {
-    color: #456BD9;
-    font-size: 16px;
+  color: #456bd9;
+  font-size: 16px;
 }
 
-.fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
-    color: white;
-    font-size: 3.5vw;
-    margin: 0 -20em 0em 20.5em;
-    text-decoration: none;
-    position: relative;
-    bottom: 3.85em;
+.fa.fa-twitter,
+.fa.fa-linkedin,
+.fa.fa-github,
+.fa.fa-google-plus {
+  color: white;
+  font-size: 3.5vw;
+  margin: 0 -20em 0em 20.5em;
+  text-decoration: none;
+  position: relative;
+  bottom: 3.85em;
 }
 
 /*This is the start of the <div> and <span> based code
@@ -119,34 +205,34 @@ a {
 cases so take care if deleting the .title from here */
 
 .title {
-    color: white;
-    text-align: center;
-    font-size: 5em;
-    margin-bottom: 1em;
+  color: white;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
 }
 
 /* This deals with the main menu */
 
 .menu {
-    list-style-type: none;
-    padding: 0;
-    text-align: right;
-    margin-top: 3em;
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  margin-top: 3em;
 }
 
 .menu li {
-    display: inline;
-    padding: 2em;
+  display: inline;
+  padding: 2em;
 }
 
 .menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
 }
 
 .menu a:hover {
-    color: #0099cc;
+  color: #0099cc;
 }
 
 /* This deals with the main part of the front-page */
@@ -154,54 +240,54 @@ cases so take care if deleting the .title from here */
 /* Boilerplate */
 
 .sidebar-item {
-    border-radius: 0.5em;
-    overflow: hidden;
-    margin-left: 5em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-left: 5em;
 }
 
 .sidebar-item-header {
-    background: #0F1C3F;
-    color: #fff;
-    font-size: 1.25em;
-    line-height: 1;
-    padding: 1rem;
-    text-align: center;
+  background: #0f1c3f;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1;
+  padding: 1rem;
+  text-align: center;
 }
 
 .sidebar-item-menu {
-    list-style: none;
-    padding: 0;
-    background-color: #dbe5ea;
+  list-style: none;
+  padding: 0;
+  background-color: #dbe5ea;
 }
 
 .sidebar-item-menu > * + * {
-    border-top: 2px solid transparent;
+  border-top: 2px solid transparent;
 }
 
 .sidebar-item-menu a {
-    background-color: rgba(255,255,255,0.5);
-    display: block;
-    line-height: 1;
-    padding: 1rem;
-    text-decoration: none;
-    line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  line-height: 1;
+  padding: 1rem;
+  text-decoration: none;
+  line-height: 1.5;
 }
 
 .archive {
-    overflow: scroll;
-    max-height: 14.45em;
+  overflow: scroll;
+  max-height: 14.45em;
 }
 
 .archive > * + * {
-    border-top: 2px solid transparent;
+  border-top: 2px solid transparent;
 }
 
- .grid {
-    display: grid;
-    grid-gap: 1.5em;
-    margin: 1.5em auto;
-    max-width: 85em;
-    padding: 0 1.5em;
+.grid {
+  display: grid;
+  grid-gap: 1.5em;
+  margin: 1.5em auto;
+  max-width: 85em;
+  padding: 0 1.5em;
 }
 
 /**
@@ -209,114 +295,111 @@ cases so take care if deleting the .title from here */
  */
 
 .sidebar {
-    display: inherit;
-    grid-gap: inherit;
+  display: inherit;
+  grid-gap: inherit;
 }
-
 
 /* This part deals with the 2-column grid */
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 100%;
-    grid-gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  grid-gap: 1em;
 }
 
 .grid-item {
-    background-color: #dbe5ea;
-    border: 1em solid #0F1C3F;
-    text-align: center;
-    max-width: 100%;
+  background-color: #dbe5ea;
+  border: 1em solid #0f1c3f;
+  text-align: center;
+  max-width: 100%;
 }
 
 .posttitle {
-    display: block;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #0F1C3F;
-    color: white;
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #0f1c3f;
+  color: white;
 }
 
 article img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .grid-container article p {
-    color: black;
-    margin: 10px;
-    text-align: center;
-    line-height: 1.5;
-    max-height: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: "Helvetica-Light";
-    font-size: 20px;
+  color: black;
+  margin: 10px;
+  text-align: center;
+  line-height: 1.5;
+  max-height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Helvetica-Light";
+  font-size: 20px;
 }
 
 .grid article p {
-    margin: 1em;
-    line-height: 1.5;
-    font-family: "Helvetica-Light";
-    font-size: 1em;
+  margin: 1em;
+  line-height: 1.5;
+  font-family: "Helvetica-Light";
+  font-size: 1em;
 }
 
 .publication {
-    display: block;
-    background-color: #0F1C3F;
-    font-size: 1em;
-    color: white;
-    margin: auto 1.25em;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0.3em;
+  display: block;
+  background-color: #0f1c3f;
+  font-size: 1em;
+  color: white;
+  margin: auto 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.3em;
 }
 
 article .button {
-    border-radius: 28px;
-    padding: 5px;
-    margin: 20px;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1em;
-    color: white;
-    background-color: #0F1C3F;
+  border-radius: 28px;
+  padding: 5px;
+  margin: 20px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: white;
+  background-color: #0f1c3f;
 }
 
 article .button:hover {
-    background: #7e98dd;
+  background: #7e98dd;
 }
 
 article .button a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 /**
  * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
  */
 
- @media only screen and (max-width: 37.5em) {
-
-.title {
+@media only screen and (max-width: 37.5em) {
+  .title {
     font-size: 3em;
-}
+  }
 
-.sidebar {
+  .sidebar {
     grid-template-columns: 1fr;
-}
+  }
 
-.sidebar-item {
+  .sidebar-item {
     margin-left: 0;
+  }
 
-}
-
-.menu li {
+  .menu li {
     display: inline;
     padding: 1.7em;
-}
+  }
 
   .menu a {
     text-decoration: none;
@@ -324,29 +407,31 @@ article .button a {
     font-size: 1em;
   }
 
-  .fa.fa-twitter, .fa.fa-linkedin, .fa.fa-github, .fa.fa-google-plus {
+  .fa.fa-twitter,
+  .fa.fa-linkedin,
+  .fa.fa-github,
+  .fa.fa-google-plus {
     color: white;
     font-size: 1.5em;
     margin: 0 -2.8em 0em 3.3em;
     text-decoration: none;
     position: relative;
     bottom: 0.3em;
-}
+  }
 
-.grid-container {
+  .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 100%;
     grid-gap: 1em;
-}
+  }
 }
 
 /**
  * At even wider sizes…
  */
 
- @media only screen and (min-width: 37.5em) {
-
+@media only screen and (min-width: 37.5em) {
   /**
    * Establish one primary (⅔) column and one secondary (⅓) column.
    */
@@ -363,19 +448,18 @@ article .button a {
   .sidebar {
     grid-auto-rows: min-content;
     grid-row: span 2;
+  }
 }
-}
-
 
 /* This part is for the footer */
 
 footer {
-    background-color: #0F1C3F;
-    color: white;
-    text-align: center;
-    font-size: 0.9em;
-    padding: 1.2em;
-    text-transform: uppercase;
+  background-color: #0f1c3f;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1.2em;
+  text-transform: uppercase;
 }
 
 /* This is the end of the style.css file */
