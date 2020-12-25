@@ -6,4 +6,4 @@ This is a fully costomizable multipurpose web template specially crafted for the
 
 ## License
 
-[GNU General Public License v3.0](LICENSE)
+[MIT License](LICENSE)
